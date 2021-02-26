@@ -7,7 +7,7 @@ toc: true
 published: true
 ---
 
-![Apply for review on Google Workspace Marketplace](https://img.shields.io/badge/Google%20Workspace%20Add--on-Preparing-lightgrey) [![GitHub Super-Linter](https://github.com/ttsukagoshi/mail-merge-for-gmail/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter) [![Total alerts](https://img.shields.io/lgtm/alerts/g/ttsukagoshi/mail-merge-for-gmail.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/ttsukagoshi/mail-merge-for-gmail/alerts/)  
+![Get this add-on from Google Workspace Marketplace](https://img.shields.io/badge/Google%20Workspace%20Add--on-Preparing-lightgrey) [![GitHub Super-Linter](https://github.com/ttsukagoshi/mail-merge-for-gmail/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter) [![Total alerts](https://img.shields.io/lgtm/alerts/g/ttsukagoshi/mail-merge-for-gmail.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/ttsukagoshi/mail-merge-for-gmail/alerts/)  
 Open-sourced Google Workspace Add-on for mail merge using Gmail and Google Sheets.
 
 **Legacy Spreadsheet Version**  
@@ -147,7 +147,7 @@ The index field marker for group merge `{{i}}` can also be modified through the 
 
 **Pro Tips💡**  
 If HTML is enabled in your Gmail, make sure that your modified markers can still be detected in the HTML string.
-{: .notice--warn}
+{: .notice--warning}
 
 {% endraw %}
 
