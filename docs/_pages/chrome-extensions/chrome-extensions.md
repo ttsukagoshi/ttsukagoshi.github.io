@@ -2,14 +2,22 @@
 permalink: /chrome-extensions/
 title: "Chrome Extensions"
 excerpt: Chrome extensions to increase your productivity
-last_modified_at: 2021-01-03T00:00:00+09:00
-toc: true
+feature_row1:
+  - image_path: /assets/images/ImgSrc-er/screenshot_ImgSrc-er.jpg
+    alt: "Screenshot of Image Sourcer"
+    title: "ImgSrc-er"
+    excerpt: "Convert selected image link URL into an HTML `<img>` tag with `src` attribute on the clipboard."
+    url: "/chrome-extensions/imgsrc-er/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+  - image_path: /assets/images/openBD-checker/screenshot_openBD_2.jpg
+    alt: "Screenshot of openBD Checker"
+    title: "openBD Checker"
+    excerpt: "Check reference book data registered on [openBD](https://openbd.jp/) by right-clicking on an ISBN."
+    url: "/chrome-extensions/openbd-checker/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+last_modified_at: 2021-02-27T00:00:00+09:00
 ---
 
-## ImgSrc-er
-![Image Sourcer icon]({{ site.url }}{{ site.baseurl }}/assets/images/ImgSrc-er/ImgSrc-er128.png){: .align-left} Google Chrome extension to convert selected image link URL into an HTML `<img>` tag with `src` attribute on the clipboard.  
-[Learn more]({{ site.url }}{{ site.baseurl }}/chrome-extensions/imgsrc-er/){: .btn .btn--primary .align-right}
-
-## openBD Checker
-![openBD Checker icon]({{ site.url }}{{ site.baseurl }}/assets/images/openBD-checker/books128.png){: .align-left} Check reference book data registered on [openBD](https://openbd.jp/) by right-clicking on an ISBN.  
-[Learn more]({{ site.url }}{{ site.baseurl }}/chrome-extensions/openbd-checker/){: .btn .btn--primary .align-right}
+{% include feature_row id="feature_row1" type="left" %}
