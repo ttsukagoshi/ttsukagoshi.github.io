@@ -9,8 +9,10 @@ toc: true
 ![Chrome Web Store](https://img.shields.io/chrome-web-store/v/mmalpdcdmbloijpgoagaeallfnmioika) [![GitHub Super-Linter](https://github.com/ttsukagoshi/chrome-ext_ImgSrc-er/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter) [![Total alerts](https://img.shields.io/lgtm/alerts/g/ttsukagoshi/chrome-ext_ImgSrc-er.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/ttsukagoshi/chrome-ext_ImgSrc-er/alerts/)  
 Convert image link URL into an `<img>` tag
 
+![Image Sourcer icon]({{ site.url }}{{ site.baseurl }}/assets/images/ImgSrc-er/ImgSrc-er128.png){: .align-center}
+
 ## About
-![Image Sourcer icon]({{ site.url }}{{ site.baseurl }}/assets/images/ImgSrc-er/ImgSrc-er128.png){: .align-left}An open-source Google Chrome extension to convert selected image link URL into an HTML `<img>` tag with `src` attribute on the clipboard.
+An open-source Google Chrome extension to convert selected image link URL into an HTML `<img>` tag with `src` attribute on the clipboard.
 
 ## Install
 This extension can be easily installed via the Chrome Web Store.  

@@ -9,12 +9,12 @@ toc: true
 ![Chrome Web Store](https://img.shields.io/chrome-web-store/v/jmbcpombnleepfponcjibgeohkfcocgg) [![GitHub Super-Linter](https://github.com/ttsukagoshi/chrome-ext_openBD-checker/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter) [![Total alerts](https://img.shields.io/lgtm/alerts/g/ttsukagoshi/chrome-ext_openBD-checker.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/ttsukagoshi/chrome-ext_openBD-checker/alerts/)  
 Check Reference Book Data Registered on openBD
 
-## About
-![openBD Checker icon]({{ site.url }}{{ site.baseurl }}/assets/images/openBD-checker/books128.png){: .align-left} An open-source Google Chrome extension to reference the book data registered on [openBD](https://openbd.jp/) by right-clicking on an ISBN.  
+![openBD Checker icon]({{ site.url }}{{ site.baseurl }}/assets/images/openBD-checker/books128.png){: .align-center} 
 
-<blockquote>
-openBD is a project based in Japan to make cover images and book data openly available to anyone who loves books. This extension uses its API to refer to the data. Please note that the API, and consequently this extension, is available only in the Japanese language.
-</blockquote>
+## About
+An open-source Google Chrome extension to reference the book data registered on [openBD](https://openbd.jp/) by right-clicking on an ISBN.  
+
+> openBD is a project based in Japan to make cover images and book data openly available to anyone who loves books. This extension uses its API to refer to the data. Please note that the API, and consequently this extension, is available only in the Japanese language.
 
 ## Install
 This extension can be easily installed via the Chrome Web Store.  
