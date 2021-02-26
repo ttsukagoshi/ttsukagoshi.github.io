@@ -1,2 +1,9 @@
-docs/_site/*
+Thumbs.db
+.DS_Store
+
+# Default settings from Minimal Mistakes remote theme starter
+# https://github.com/mmistakes/mm-github-pages-starter
+_site
+.sass-cache
+.jekyll-metadata
 Gemfile.lock
