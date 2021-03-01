@@ -1,17 +1,17 @@
 ---
-permalink: /add-ons/group-merge/
-title: "Group Merge: Mail Merge for Gmail"
-excerpt: Open-sourced Google Workspace add-on to send personalized emails based on Gmail template to multiple recipients. The unique Group Merge feature allows sender to group multiple contents for the same recipient in a single email.
+permalink: /ja/add-ons/group-merge/
+title: "Group Merge: Gmailのための差し込みメール作成"
+excerpt: Gmailのテンプレート（下書き）を元にして受信者ごとに宛名などを差し込んだメールを作成する、オープンソースのGoogle Workspaceアドオン。GmailとGoogleスプレッドシート連携。宛先リストに、同じ宛先（メールアドレス）が複数入力されている場合、内容を1通のメールにまとめて送信できる**「まとめ差し込み（Group Merge）」**機能つき。
 last_modified_at: 2021-02-27T00:00:00+09:00
 toc: true
-published: true
+published: false
 ---
 
-![Get this add-on from Google Workspace Marketplace](https://img.shields.io/badge/Google%20Workspace%20Add--on-Preparing-lightgrey) [![GitHub Super-Linter](https://github.com/ttsukagoshi/mail-merge-for-gmail/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter) [![Total alerts](https://img.shields.io/lgtm/alerts/g/ttsukagoshi/mail-merge-for-gmail.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/ttsukagoshi/mail-merge-for-gmail/alerts/)  
-Open-sourced Google Workspace Add-on for mail merge using Gmail and Google Sheets.
+![Google Workspaceマーケットプレイスからインストールする](https://img.shields.io/badge/Google%20Workspace%20Add--on-Preparing-lightgrey) [![GitHub Super-Linter](https://github.com/ttsukagoshi/mail-merge-for-gmail/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter) [![Total alerts](https://img.shields.io/lgtm/alerts/g/ttsukagoshi/mail-merge-for-gmail.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/ttsukagoshi/mail-merge-for-gmail/alerts/)  
+Gmailのテンプレート（下書き）を元にして受信者ごとに宛名などを差し込んだメールを作成する、オープンソースのGoogle Workspaceアドオン
 
-**Legacy Spreadsheet Version**  
-The version 1 series, a legacy version preceding the current Google Workspace Add-on versions, is no longer maintained. It is available as [a GitHub branch](https://github.com/ttsukagoshi/mail-merge-for-gmail/tree/legacy-v1.8.0-spreadsheet) together with the sample spreadsheet.
+**レガシー（スプレッドシート）版**  
+Google Workspaceアドオンとして提供される前に公開していたレガシー版（スプレッドシート版）は現在、開発が停止しています。今後、Google側での仕様変更により使用できなくなる可能性もありますので、ご注意ください。ソースコードやサンプルスプレッドシートを確認したい方のために[GitHub上のブランチ](https://github.com/ttsukagoshi/mail-merge-for-gmail/tree/legacy-v1.8.0-spreadsheet)として残していますので、必要に応じてご参照ください。
 {: .notice--info}
 
 {% raw %}
@@ -147,7 +147,7 @@ The index field marker for group merge `{{i}}` can also be modified through the 
 
 **Pro Tips💡**  
 If HTML is enabled in your Gmail, make sure that your modified markers can still be detected in the HTML string.
-{: .notice--warning}
+{: .notice--warn}
 
 {% endraw %}
 
