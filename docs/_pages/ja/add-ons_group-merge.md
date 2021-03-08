@@ -184,7 +184,7 @@ GmailでHTML形式を有効にしたテンプレートを作成していて、�
 **ユーザ設定**と**前回設定**は、いずれもユーザのみが読み書き権限を持つ、アドオンの[User Properties](https://developers.google.com/apps-script/guides/properties)に保存されている。ここに保存された情報は、アドオンの開発者や他のアドオンをはじめとするユーザ以外の第三者に共有されることはない。
 
 ## 利用規約
-アドオンの使用は、[利用規約（英）]({{ site.url }}{{ site.baseurl }}/terms-and-conditions/)に同意したものとみなされます。
+アドオンの使用には、[利用規約（英）]({{ site.url }}{{ site.baseurl }}/terms-and-conditions/)への同意が必要です。
 
 ### プライバシーとOAuthスコープに関する補足
 
