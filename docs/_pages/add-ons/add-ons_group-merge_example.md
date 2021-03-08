@@ -77,3 +77,5 @@ Meeting ID: 00002
 We look forward to seeing you!
 ```
 {% endraw %}
+  
+[Go back to Group Merge]({{ site.url }}{{ site.baseurl }}/add-ons/group-merge/){: .btn .btn--primary .align-right}

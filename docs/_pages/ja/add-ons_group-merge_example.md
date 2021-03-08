@@ -2,78 +2,79 @@
 permalink: /ja/add-ons/group-merge/example-of-group-merge/
 title: "Group Merge: まとめ差し込み（Group Merge）機能の使用例"
 excerpt: An example of how the group merge feature of the add-on Group Merge works
-last_modified_at: 2021-02-22T22:00:00+09:00
+last_modified_at: 2021-03-08T12:00:00+09:00
 toc: true
-published: false
+published: true
 ---
 
-This is a page to illustrate how group merging works in the Google Workspace Add-on **Group Merge**.  
-[Go back to Group Merge]({{ site.url }}{{ site.baseurl }}/add-ons/group-merge/){: .btn .btn--primary .align-right}
+このページはGoogle Workspaceアドオン「**Group Merge**」の機能である「まとめ差し込み（Group Merge）」の使用例を示すものです。  
+[アドオンのページに戻る]({{ site.url }}{{ site.baseurl }}/ja/add-ons/group-merge/){: .btn .btn--primary .align-right}
 
-## Sample List of Recipients
-Given a list of email addresses below:
+## 宛先リストのサンプル
+次のような宛先リストがあるとする：
 
-| Email | Name | Meeting ID | Date | Start Time | End Time |
+| Email | 名前 | ミーティングID | 日付 | 開始時刻 | 終了時刻 |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-|`john@example.com`|John|00001|May 7, 2020|13:00|14:00|
-|`mary@sample.com`|Mary|00002|May 7, 2020|14:30|15:30|
-|`john@example.com`|John|00003|May 8, 2020|9:00|10:00|
+|`tanaka@example.com`|田中|00001|2020年5月7日|13:00|14:00|
+|`suzuki@sample.com`|鈴木|00002|2020年5月7日|14:30|15:30|
+|`tanaka@example.com`|田中|00003|2020年5月8日|9:00|10:00|
 
 {% raw %}
-## Sample Template
-And a Gmail draft with the below text as its body:  
+## テンプレート（Gmail下書き）のサンプル
+そして以下のような本文を入力したGmailの下書きをテンプレートとして利用する：
 ```
-Dear {{Name}},
+{{名前}} 様,
 
-Thank you for your application.
-Details of your meeting are as below:
+この度はお申し込みいただき、誠にありがとうございます。
+ウェブ会議システムのミーティングIDは次のとおりです：
 
 [[
-Meeting No. {{i}}
-Date: {{Date}}
-Time Slot: {{Start Time}} – {{End Time}}
-Meeting ID: {{Meeting ID}}
+ミーティング{{i}}
+日づけ: {{日付}}
+時間: {{開始時刻}} – {{終了時刻}}
+ミーティングID: {{ミーティングID}}
 
 ]]
-
-We look forward to seeing you!
+当日お会いできるのを楽しみにしております。
 ```
 
-## Outcome
-The personalized emails using group merge will look like this:
+## 結果
+まとめ差し込み（Group Merge）機能を有効にした差し込み後のメールを、以下のようなものとなる：
 
-### Email to John
+### 田中さんへのメール
 ```
-Dear John,
+田中 様,
 
-Thank you for your application.
-Details of your meeting are as below:
+この度はお申し込みいただき、誠にありがとうございます。
+ウェブ会議システムのミーティングIDは次のとおりです：
 
-Meeting No. 1
-Date: May 7, 2020
-Time Slot: 13:00 – 14:00
-Meeting ID: 00001
+ミーティング1
+日づけ: 2020年5月7日
+時間: 13:00 – 14:00
+ミーティングID: 00001
 
-Meeting No. 2
-Date: May 8, 2020
-Time Slot: 9:00 – 10:00
-Meeting ID: 00003
+ミーティング2
+日づけ: 2020年5月8日
+時間: 9:00 - 10:00
+ミーティングID: 00003
 
-We look forward to seeing you!
+当日お会いできるのを楽しみにしております。
 ```
 
-### Email to Mary
+### 鈴木さんへのメール
 ```
-Dear Mary,
+鈴木 様,
 
-Thank you for your application.
-Details of your meeting are as below:
+この度はお申し込みいただき、誠にありがとうございます。
+ウェブ会議システムのミーティングIDは次のとおりです：
 
-Meeting No. 1
-Date: May 7, 2020
-Time Slot: 14:30 – 15:30
-Meeting ID: 00002
+ミーティング1
+日づけ: 2020年5月7日
+時間: 14:30 – 15:30
+ミーティングID: 00002
 
-We look forward to seeing you!
+当日お会いできるのを楽しみにしております。
 ```
 {% endraw %}
+  
+[アドオンのページに戻る]({{ site.url }}{{ site.baseurl }}/ja/add-ons/group-merge/){: .btn .btn--primary .align-right}
