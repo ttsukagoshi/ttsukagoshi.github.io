@@ -2,10 +2,13 @@
 permalink: /add-ons/group-merge/
 title: "Group Merge: Mail Merge for Gmail"
 excerpt: Open-sourced Google Workspace add-on to send personalized emails based on Gmail template to multiple recipients. The unique Group Merge feature allows sender to group multiple contents for the same recipient in a single email.
-last_modified_at: 2021-02-27T00:00:00+09:00
+last_modified_at: 2021-03-08T12:00:00+09:00
 toc: true
 published: true
 ---
+
+English/[日本語]({{ site.url }}{{ site.baseurl }}/ja/add-ons/group-merge/)  
+{: .align-center}
 
 ![Get this add-on from Google Workspace Marketplace](https://img.shields.io/badge/Google%20Workspace%20Add--on-Preparing-lightgrey) [![GitHub Super-Linter](https://github.com/ttsukagoshi/mail-merge-for-gmail/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter) [![Total alerts](https://img.shields.io/lgtm/alerts/g/ttsukagoshi/mail-merge-for-gmail.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/ttsukagoshi/mail-merge-for-gmail/alerts/)  
 Open-sourced Google Workspace Add-on for mail merge using Gmail and Google Sheets.
@@ -42,7 +45,7 @@ If you already have a spreadsheet listing the recipients of your email, you can 
 
 ### 3. Open the Group Merge add-on from Sheets Side Panel
 Open the homepage card for Group Merge add-on by clicking on its icon in the Google Sheets side panel.  
-![Group Merge icon in the Google Sheets side panel](https://lh3.googleusercontent.com/pw/ACtC-3cXgWJODm80e5_miuf8Bos73oBpasaPnOvl72sOu0Kirq4YGNWdAT8Hh0Emn-MHTG2F7mhRHQFn1SL9XjKZzS7eIEaI6t44E0eSUIXALXxalbbvNzOoUKGeWUjln-hSwNV3gpSPDEAjRxTnMH0VT3WK=w526-h474-no){: .align-center}  
+![Group Merge icon in the Google Sheets side panel](https://lh3.googleusercontent.com/pw/ACtC-3ezL4YANFeGvtCQURMARrmqqCYY5uAxzFrztjhNKszO5LePgTrlJqi_MySzggICmdv04rRiONwK8AjPflkjX4Uhtgr3We-Ka4YI2l6Asjbws24DUqrvSMVY43FBTU5k7twh8RSBzG823lhoKiWdRHZy=w526-h319-no){: .align-center}  
 You will see the Group Merge interface appear, like so:  
 ![Activated add-on side panel](https://lh3.googleusercontent.com/pw/ACtC-3evDtIezaBxpPAtlkrjm5qrrtOAd4dCAqokNB3oxxqlrWqJ0kl8dUIyNww0jW0TcUn0fyN5W4CJ8_dnGOgZyQHin-y6uTWn-Icdd4BLn3rMplV6L5u-KZcoHDd3NSi3FF59zrg3C6a3H4UvA4qGKovY=w1102-h567-no){: .align-center} 
 
@@ -68,21 +71,35 @@ Move on to the [Gmail UI](https://mail.google.com/mail/). Compose a draft to ser
 - **Reply-To** setting can be optionally enabled (but is disabled by default). See [Reply-To](#reply-to) in the Advanced Settings section.
 
 #### 5-2. Subject and Body
-You can use merge fields (placeholders) and [group merge](#5-5-group-merge) fields in the subject as well as the body of the template draft. The subject must be unique. An error will be returned during the process of merging mails if there are two or more Gmail drafts with the same subject.  
+You can use merge fields (placeholders) and [group merge](#5-5-group-merge) fields in the subject as well as the body of the template draft.  
 ![Editing the subject and body of the template draft](https://lh3.googleusercontent.com/pw/ACtC-3fHRxVSL-E7RkK_gU35V5g4sG1n7LxJ-N2j8TS1QKvwZQ1lPlXCSYj-fq2K_pLsSHwiBu_G_D16MrTeUZSVTvDNBiBpmwvQg8qiDITO3MESB3iVtZde5ue83FHsUdHdBA9Ej_FNrLgjU-U-DQFOkTMB=w1044-h761-no){: .align-center} 
 
-By default, the merge fields are specified by double curly brackets, as in `Dear {{Name}},... `. The placeholders should correspond, case-sensitive, with the column names of the spreadsheet that you created in [2. Create your List of Recipients](#2-create-your-list-of-recipients). If an invalid placeholder is designated, e.g., a field name that does not match the column names, the field is replace by the text `NA` in the personalized emails. You can modify this replace value in the [Advanced Settings section](#replace-value).
+**The subject must be unique.** An error will be returned during the process of merging mails if there are two or more Gmail drafts with the same subject.
+{: .notice--warning}
+
+By default, the merge fields are specified by double curly brackets, as in
+
+```
+Dear {{Name}},
+...
+```
+
+- The placeholders should correspond, case-sensitive, with the column names of the spreadsheet that you created in [2. Create your List of Recipients](#2-create-your-list-of-recipients).
+- If an invalid placeholder is designated, e.g., a field name that does not match the column names, the field is replace by the text `NA` in the personalized emails. You can modify this replace value in the [Advanced Settings section](#replace-value).
+- HTML styling will be reflected on the merged mails.
 
 See the [Group Merge](#5-5-group-merge) section for the details on the feature to group multiple contents for the same recipient in a single email.
 
+**Pro Tips💡**  
 If you want to change the field markers, see [Field Markers](#field-markers-placeholders) in the Advanced Settings section.
 
 #### 5-3. File Attachments
-File attachments including in-line image attachments attached to the draft will be reflected on the merged emails.
-
-**Note** In-line images can only be attached if you have HTML styling enabled.
-{: .notice--info}  
+File attachments including in-line image attachments attached to the draft will be reflected on the merged emails.  
 ![Sample of file and in-line image attachments](https://lh3.googleusercontent.com/pw/ACtC-3das9KldhoGPNWRQv7HEWM6-XMyjndPNfrnn1LqV18j83W8NSSntjd8gXOwSV3TQQHtP7xN4BobcgmqB3ODSnikkWA7ylhOQHtwiwPf1sJahIInoQAoShEcsW-Fq2M7RS8-ZbAeaSHZzg6-hfjyK5Pw=w1016-h632-no){: .align-center}
+
+**Pro Tips💡**  
+In-line images can only be attached if you have HTML styling enabled.
+{: .notice--info}
 
 #### 5-4. Gmail Labels
 The Gmail labels that you add to the template will be copied and attached to the personalized emails as well.  
@@ -107,15 +124,15 @@ See the [Settings](#settings) section for details of other advanced settings.
 
 ### 7. Merge Mails
 You can choose either to **CREATE DRAFTS** or directly **SEND EMAILS** based on the template from the bottom-most buttons in the side panel.
-![Copy and paste the subject of the template to the side panel form](https://lh3.googleusercontent.com/pw/ACtC-3cpNZA037gie2ZTd3pGIqY1ea7uFAIdSpus93oX3EdMLOv44GUXY6x5eeI6T1GWlE4URdAyIHrZfKRpFqhX8tI0DLmnEDffqaK-teRUv_zti-FSfCttcXEPXo2fGefkDZ73GU76RLaeMOHGn8RKWGQb=w1336-h748-no)
+![Screenshot of Create Drafts and Send Emails button in the bottom-most part of the add-on side panel](https://lh3.googleusercontent.com/pw/ACtC-3cpNZA037gie2ZTd3pGIqY1ea7uFAIdSpus93oX3EdMLOv44GUXY6x5eeI6T1GWlE4URdAyIHrZfKRpFqhX8tI0DLmnEDffqaK-teRUv_zti-FSfCttcXEPXo2fGefkDZ73GU76RLaeMOHGn8RKWGQb=w1336-h748-no)
 
 - **CREATE DRAFTS**: Drafts of the merged mails will be saved in your draft box. You can check to see if the mails are correctly merged in the way you intended them to be. 
 - **SEND EMAILS**: Directly send the merged emails.
 
 **SEND CREATED DRAFTS button**  
-You can bulk send the created drafts by pressing the **SEND CREATED DRAFTS** button, located at the top of the side panel. This button will be enabled once you have created a set of merged drafts from **CREATE DRAFTS**, and on pressing, will send **only the drafts created by the *latest* CREATE DRAFTS action**.  
+You can bulk send the drafts created by the **CREATE DRAFTS** button by pressing the **SEND CREATED DRAFTS** button, located at the top of the side panel. This button will be enabled once you have created a set of merged drafts from **CREATE DRAFTS**, and on pressing, will send **only the drafts created by the *latest* CREATE DRAFTS action**.  
 ![SEND CREATED DRAFTS button](https://lh3.googleusercontent.com/pw/ACtC-3eQ3bHLMf-nAZK4biEU0nRX8S9AQrrl5pI1pZyVO4-1LV7xk15K30UvxkeVu1rnDr0pcFai9Kp21rD-fe2SmWbEy6HO89FRz_ZNE2-TNvJKssA7alg0ci5xlxJwSGaNXOcMgKPBcXlMmBbtEha_tpZz=w762-h340-no)  
-This is done by saving the set of draft IDs, unique strings for each drafts of merged emails, to [User Property](https://developers.google.com/apps-script/guides/properties?hl=en). The value is overwritten every time the user executes **CREATE DRAFTS** or **SEND CREATED DRAFTS**, so only the latest drafts created will be subject to this bulk send action.
+This is done so by saving the set of draft IDs, unique strings for each drafts of merged emails, to [User Property](https://developers.google.com/apps-script/guides/properties?hl=en). The value is overwritten every time the user executes **CREATE DRAFTS** or **SEND CREATED DRAFTS**, so only the latest drafts created will be subject to this bulk send action.
 {: .notice--info}
 
 ## Settings
@@ -141,7 +158,7 @@ If you want to combine the Reply-To settings with **CREATE DRAFTS** rather than 
 The text value that will replace placeholders with empty or invalid data. Defaults to `NA`.
 
 #### Field Markers (Placeholders)
-The markers for merge fields and group merge fields can modified by adjusting the values in **Merge Field Marker** and **Group Field Marker**, respectively. You will need to be familiar with [the regular expressions of JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions). If HTML is enabled in your Gmail, make sure that your modified markers can still be detected in the HTML string.
+The markers for merge fields and group merge fields can modified by adjusting the values in **Merge Field Marker** and **Group Field Marker**, respectively. You will need to be familiar with [the regular expressions of JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions). Note that the backslash itself does not need to be escaped, i.e., does not need to be repeated.
 
 The index field marker for group merge `{{i}}` can also be modified through the value **Row Index Marker**.
 
@@ -153,10 +170,10 @@ If HTML is enabled in your Gmail, make sure that your modified markers can still
 
 ### Saving and Restoring Settings
 When opening the side panel of this add-on, the parameters, like the spreadsheet URL and sheet name, are pre-filled based on a certain rule:  
-- If a saved set of **user settings** is present, this will be the set of values pre-entered.
-- If the set of **user settings** is not available, then the add-on searches for **previous settings** and pre-sets the values if present.
-- If both **user** and **previous settings** could not be found, then the add-on side panel is opened with a set of **default settings**.
-- **There is an exception** to this rule: when the add-on is opened in Google Sheets, the spreadsheet URL will always be pre-filled with the URL of the current spreadsheet.
+1. If a saved set of **user settings** is present, this will be the set of values pre-entered.
+2. If the set of **user settings** is not available, then the add-on searches for **previous settings** and pre-sets the values if present.
+3. If both **user** and **previous settings** could not be found, then the add-on side panel is opened with a set of **default settings**.
+4. **There is an exception** to this rule: when the add-on is opened in Google Sheets, the spreadsheet URL will always be pre-filled with **the URL of the current spreadsheet**.
 
 The definition of the respective types of settings are as follows:  
 - **User Settings**: The set of parameters that were entered when the user last clicked the **SAVE USER SETTINGS** button (as in [4. Fill in the Required Items (1) - Google Sheets View](#4-fill-in-the-required-items-1---google-sheets-view)). Does not exist if the user has never clicked the button. Can be reproduced by clicking the **RESTORE USER SETTINGS** button.
