@@ -2,7 +2,7 @@
 permalink: /add-ons/group-merge/
 title: "Group Merge: Mail Merge for Gmail"
 excerpt: Open-sourced Google Workspace add-on to send personalized emails based on Gmail template to multiple recipients. The unique Group Merge feature allows sender to group multiple contents for the same recipient in a single email.
-last_modified_at: 2021-03-08T12:00:00+09:00
+last_modified_at: 2021-03-08T23:00:00+09:00
 toc: true
 published: true
 ---
@@ -190,9 +190,9 @@ You must agree to the [Terms and Conditions]({{ site.url }}{{ site.baseurl }}/te
 This section constitutes an addition to the [Terms and Conditions]({{ site.url }}{{ site.baseurl }}/terms-and-conditions/) as defined by its [Additional Terms clause]({{ site.url }}{{ site.baseurl }}/terms-and-conditions/#additional-terms) to clarify how the user's private information is handled in this add-on.
 {: .notice--info}
 
-This add-on is in compliance with the [Privacy Policy]({{ site.url }}{{ site.baseurl }}/privacy-policy/) with regard to your private data, which includes the contents of your Gmail and Google Sheets files. Separate from this policy, Google provides protection for the add-on users' privacy by limiting the *scope* of authorized information that an add-on can have access to, called the [Google OAuth Scopes](https://developers.google.com/identity/protocols/oauth2/scopes).
+This add-on is in compliance with the [Privacy Policy]({{ site.url }}{{ site.baseurl }}/privacy-policy/) with regard to the processing of your private data, which includes the contents of your Gmail and Google Sheets files. Separate from this policy, Google provides protection for the add-on users' privacy by limiting the *scope* of authorized information that an add-on can have access to, called the [Google OAuth Scopes](https://developers.google.com/identity/protocols/oauth2/scopes).
 
-The list of OAuth Scopes that this add-on requests to the user is as follows. As you may notice, Google does not define an authorization scope that is completely fit to the purpose and required functions of this add-on in their [Gmail](https://developers.google.com/gmail/api/auth/scopes#gmail_scopes) and [Google Sheets](https://developers.google.com/sheets/api/guides/authorizing#OAuth2Authorizing) authorization scopes, so some of the scopes may seem broader than necessary. As a supplement to the Terms and Conditions, this is a legally binding statement that this add-on will not process any authorized data in the manner not described in the below table:  
+The list of OAuth Scopes that this add-on requests from the user is as follows. As you may notice, Google does not define an authorization scope that is completely fit to the purpose and required functions of this add-on in their [Gmail](https://developers.google.com/gmail/api/auth/scopes#gmail_scopes) and [Google Sheets](https://developers.google.com/sheets/api/guides/authorizing#OAuth2Authorizing) authorization scopes, so some of the scopes may seem broader than necessary. As a supplement to the Terms and Conditions, this is a legally binding statement that this add-on will not process any authorized data in the manner not described in the below table:  
 
 The prefix `...` for the scopes in the table stands for `https://www.googleapis.com/auth`
 {: .notice--info}
@@ -201,8 +201,8 @@ The prefix `...` for the scopes in the table stands for `https://www.googleapis.
 | --- | --- | --- |
 | `.../script.locale` | View your locale and timezone information | Use your locale to provided localized side panel view and add-on messages. |
 | `.../gmail.addons.execute` | Execute as a Gmail add-on | Open and execute this add-on. |
-| `.../gmail.compose` | Create, read, update, and delete drafts. Send messages and drafts. | Get the contents of the designated template Gmail draft, create merged draft mails, and send the created drafts on behalf of the user.|
-| `.../gmail.modify` | View and modify but not delete your email | Add label(s) that were on the template draft to the merged mail drafts. |
+| `.../gmail.compose` | Create, read, update, and delete drafts. Send messages and drafts. | Create merged draft mails, and send the created drafts on behalf of the user.|
+| `.../gmail.modify` | View and modify but not delete your email | Search for the user's template Gmail draft based on its subject, read the contents of the designated template, and add label(s) that were on the template draft to the merged mail drafts. |
 | `.../spreadsheets` | Allows read/write access to your sheets and their properties. | Search for the spreadsheet using the URL that the user designated. Read the contents of the worksheet specified by the user by its sheet name in the spreadsheet. The only reason that this add-on uses this broad scope rather than using `.../spreadsheets.readonly`, a read-only scope, is that Google limits the use of `SpreadsheetApp.openByUrl(url)`, the method used behind linking the URL you entered to the actual spreadsheet object, to add-ons with the authorization of the former scope. |
 | `.../userinfo.email` | View the user's email address | Used in the UI message to confirm if the user is sending/drafting the merged mail in the account that user intended as the sender. This message appears only if the user is merging the mails from the Google Sheets UI. |
 
