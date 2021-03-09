@@ -185,12 +185,16 @@ The definition of the respective types of settings are as follows:
 ## Terms and Conditions
 You must agree to the [Terms and Conditions]({{ site.url }}{{ site.baseurl }}/terms-and-conditions/) to use this add-on.
 
-### Supplementary Note on Privacy and OAuth Scopes
+### Disclosure on Privacy and OAuth Scopes
 
 This section constitutes an addition to the [Terms and Conditions]({{ site.url }}{{ site.baseurl }}/terms-and-conditions/) as defined by its [Additional Terms clause]({{ site.url }}{{ site.baseurl }}/terms-and-conditions/#additional-terms) to clarify how the user's private information is handled in this add-on.
 {: .notice--info}
 
-**Group Merge: Mail Merge for Gmail**, hereinafter referred to as the Add-on in this section, is in compliance with the [Privacy Policy]({{ site.url }}{{ site.baseurl }}/privacy-policy/) with regard to the processing of your private data, which includes the contents of your Gmail and Google Sheets files. Moreover, the Add-on's use and transfer to any other app of information received from Google APIs will adhere to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes), including the Limited Use requirements.
+**Group Merge: Mail Merge for Gmail**, hereinafter referred to as the Add-on in this section, is in compliance with the [Privacy Policy]({{ site.url }}{{ site.baseurl }}/privacy-policy/) with regard to the processing of your private data, which includes the contents of your Gmail and Google Sheets files. 
+
+**Disclosure**  
+The Add-on's use and transfer to any other app of information received from Google APIs will adhere to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes), including the Limited Use requirements.
+{: .notice--warning}
 
 Separate from these policies, Google provides protection for the add-on users' privacy by limiting the *scope* of authorized information that an add-on can have access to, called the [Google OAuth Scopes](https://developers.google.com/identity/protocols/oauth2/scopes). The list of OAuth Scopes that this Add-on requests from the user is as follows. As you may notice, Google does not define an authorization scope that is completely fit to the purpose and required functions of this Add-on in their [Gmail](https://developers.google.com/gmail/api/auth/scopes#gmail_scopes) and [Google Sheets](https://developers.google.com/sheets/api/guides/authorizing#OAuth2Authorizing) authorization scopes, so some of the scopes may seem broader than necessary. As a supplement to the Terms and Conditions, this is a legally binding statement that this Add-on will not process any authorized data in the manner not described in the below table:  
 

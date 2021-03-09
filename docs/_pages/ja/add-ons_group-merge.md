@@ -186,12 +186,12 @@ GmailでHTML形式を有効にしたテンプレートを作成していて、�
 ## 利用規約
 アドオンの使用には、[利用規約（英）]({{ site.url }}{{ site.baseurl }}/terms-and-conditions/)への同意が必要です。
 
-### プライバシーとOAuthスコープに関する補足
+### プライバシーとOAuthスコープに関する情報公開
 
 本節は、[利用規約（Terms and Conditions）]({{ site.url }}{{ site.baseurl }}/terms-and-conditions/)の条項「[Additional Terms（追加条件）]({{ site.url }}{{ site.baseurl }}/terms-and-conditions/#additional-terms)」で定義されたように利用規約の追補となるものであり、このアドオンのユーザの個人情報がどこように扱われるかをより詳細に明示したものです。
 {: .notice--info}
 
-[原文を見る]({{ site.url }}{{ site.baseurl }}/add-ons/group-merge/#supplementary-note-on-privacy-and-oauth-scopes){: .btn .btn--primary .align-right}
+[原文を見る]({{ site.url }}{{ site.baseurl }}/add-ons/group-merge/#disclosure-on-privacy-and-oauth-scopes){: .btn .btn--primary .align-right}
 
 ## ソースコード
 本アドオンのソースコードはGitHub上で公開されています。機能追加・強化に関する要望や、バグ等の報告についてはGitHub上のIssueによりご連絡ください。ソースコードに関するライセンスは、当該GitHubレポジトリで明示しています。  
