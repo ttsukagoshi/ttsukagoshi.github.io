@@ -2,7 +2,7 @@
 permalink: /add-ons/group-merge/
 title: "Group Merge: Mail Merge for Gmail"
 excerpt: Open-sourced Google Workspace add-on to send personalized emails based on Gmail template to multiple recipients. The unique Group Merge feature allows sender to group multiple contents for the same recipient in a single email.
-last_modified_at: 2021-03-09T14:30:00+09:00
+last_modified_at: 2021-03-16T01:00:00+09:00
 toc: true
 published: true
 ---
@@ -10,7 +10,7 @@ published: true
 English/[日本語]({{ site.url }}{{ site.baseurl }}/ja/add-ons/group-merge/)  
 {: .align-center}
 
-![Get this add-on from Google Workspace Marketplace](https://img.shields.io/badge/Google%20Workspace%20Add--on-Preparing-lightgrey) [![GitHub Super-Linter](https://github.com/ttsukagoshi/mail-merge-for-gmail/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter) [![Total alerts](https://img.shields.io/lgtm/alerts/g/ttsukagoshi/mail-merge-for-gmail.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/ttsukagoshi/mail-merge-for-gmail/alerts/)  
+[![Get this add-on from Google Workspace Marketplace](https://img.shields.io/badge/Google%20Workspace%20Add--on-Available-green)](https://workspace.google.com/marketplace/app/group_merge_mail_merge_for_gmail/586770229603) [![GitHub Super-Linter](https://github.com/ttsukagoshi/mail-merge-for-gmail/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter) [![Total alerts](https://img.shields.io/lgtm/alerts/g/ttsukagoshi/mail-merge-for-gmail.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/ttsukagoshi/mail-merge-for-gmail/alerts/)  
 Open-sourced Google Workspace Add-on for mail merge using Gmail and Google Sheets.
 
 **Legacy Spreadsheet Version**  
