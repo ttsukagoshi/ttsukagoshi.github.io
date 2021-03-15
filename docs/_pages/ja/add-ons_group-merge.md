@@ -2,7 +2,7 @@
 permalink: /ja/add-ons/group-merge/
 title: "Group Merge - Gmailのための差し込みメール作成"
 excerpt: Gmailのテンプレート（下書き）を元にして受信者ごとに宛名などを差し込んだメールを作成する、オープンソースのGoogle Workspaceアドオン。GmailとGoogleスプレッドシート連携。宛先リストに、同じ宛先（メールアドレス）が複数入力されている場合、内容を1通のメールにまとめて送信できる**「まとめ差し込み（Group Merge）」**機能つき。
-last_modified_at: 2021-03-08T12:00:00+09:00
+last_modified_at: 2021-03-16T01:00:00+09:00
 toc: true
 published: true
 ---
@@ -10,7 +10,7 @@ published: true
 [English]({{ site.url }}{{ site.baseurl }}/add-ons/group-merge/)/日本語  
 {: .align-center}
 
-![Google Workspaceマーケットプレイスからインストールする](https://img.shields.io/badge/Google%20Workspace%20Add--on-Preparing-lightgrey) [![GitHub Super-Linter](https://github.com/ttsukagoshi/mail-merge-for-gmail/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter) [![Total alerts](https://img.shields.io/lgtm/alerts/g/ttsukagoshi/mail-merge-for-gmail.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/ttsukagoshi/mail-merge-for-gmail/alerts/)
+[![Google Workspaceマーケットプレイスでこのアドオンを入手する](https://img.shields.io/badge/Google%20Workspace%20Add--on-Available-green)](https://workspace.google.com/marketplace/app/group_merge_mail_merge_for_gmail/586770229603) [![GitHub Super-Linter](https://github.com/ttsukagoshi/mail-merge-for-gmail/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter) [![Total alerts](https://img.shields.io/lgtm/alerts/g/ttsukagoshi/mail-merge-for-gmail.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/ttsukagoshi/mail-merge-for-gmail/alerts/)
 
 Gmailのテンプレート（下書き）を元にして受信者ごとに宛名などを差し込んだメールを作成する、オープンソースのGoogle Workspaceアドオン
 
