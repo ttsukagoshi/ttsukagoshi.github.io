@@ -8,9 +8,8 @@ toc: true
 ## Thank you for taking interest in Scriptable Assets!
 The following Terms and Conditions ("Terms") govern Your access to and use of this Scriptable Assets website at [https://www.scriptable-assets.page/](https://www.scriptable-assets.page/) ("Website"). The scope of these Terms extend also to the apps, extensions, add-ons, and other types of solutions guided explicitly in this Website to which I, [Taro TSUKAGOSHI](https://github.com/ttsukagoshi), the sole administrator of this Website, have the right to distribute (collectively referred herein as "Service" or "[Services](#services)". Please read these Terms carefully. By accessing this Website or using any of the Services, You agree to be bound by these Terms. You also confirm You have read and agreed to My Privacy Policy at [https://www.scriptable-assets.page/privacy-policy/](https://www.scriptable-assets.page/privacy-policy/).
 
-<blockquote>
 "You" or "Your" in this page refers to the viewer of this Website or the user of the Services. These Terms herein constitutes a legal agreement between You and I ("both parties"). You must be of sufficient age, in Your timezone and local jurisdication, to legally bind Yourself to these Terms. If You are entering into these Terms on behalf of a company, You represent that You have the authority to bind that company to these Terms.
-</blockquote>
+{: .notice--info}
 
 ## Services
 This Website serves as a hub to a collection of open-source solutions that I own. The term "Service" or "Services" in these Terms refer to one or all of the such solutions explicitly provided in this Website. The following is a complete list of the Services implied herein:  
