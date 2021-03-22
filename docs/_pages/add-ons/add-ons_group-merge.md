@@ -2,7 +2,7 @@
 permalink: /add-ons/group-merge/
 title: "Group Merge: Mail Merge for Gmail"
 excerpt: Open-sourced Google Workspace add-on to send personalized emails based on Gmail template to multiple recipients. The unique Group Merge feature allows sender to group multiple contents for the same recipient in a single email.
-last_modified_at: 2021-03-16T01:00:00+09:00
+last_modified_at: 2021-03-23T01:00:00+09:00
 toc: true
 published: true
 ---
@@ -30,9 +30,7 @@ The below steps illustrate the basic flow for using this add-on, but that doesn'
 {: .notice--info}
 
 ### 1. Install the Add-on
-**Almost Ready!** This add-on is currently being reviewed by the Google team. The below text link to a mock URL for the relevant Google Workspace Marketplace will be replaced by a valid one after due verification.
-{: .notice--warning}  
-Install this add-on from [the Google Workspace Marketplace](#). You have only to do this once per user; updates to the add-on will be automatically distributed via the Marketplace.
+Install this add-on from [the Google Workspace Marketplace](https://workspace.google.com/marketplace/app/group_merge_mail_merge_for_gmail/586770229603). You have only to do this once per user; updates to the add-on will be automatically distributed via the Marketplace.
 
 ### 2. Create your List of Recipients
 If you already have a spreadsheet listing the recipients of your email, you can continue working on it. If you don't, create a Google Sheets spreadsheet.  
