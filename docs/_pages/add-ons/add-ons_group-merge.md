@@ -41,6 +41,9 @@ If you already have a spreadsheet listing the recipients of your email, you can 
 4. Note that non-alphanumeric letters can also be used as the header name and merge values.
 5. The lower-case letter `i` is reserved as part of the Group Merge feature, as described below, and should not be used alone for a column name to avoid unexpected errors.
 
+**Keep in mind** that the number of emails that you can send on Gmail/Google Workspace accounts is [quota-limited](https://developers.google.com/apps-script/guides/services/quotas); this add-on, or any of the Google Workspace Add-ons in fact, cannot work around this limitation.
+{: .notice--warning}
+
 ### 3. Open the Group Merge add-on from Sheets Side Panel
 Open the homepage card for Group Merge add-on by clicking on its icon in the Google Sheets side panel.  
 ![Group Merge icon in the Google Sheets side panel](https://lh3.googleusercontent.com/pw/ACtC-3ezL4YANFeGvtCQURMARrmqqCYY5uAxzFrztjhNKszO5LePgTrlJqi_MySzggICmdv04rRiONwK8AjPflkjX4Uhtgr3We-Ka4YI2l6Asjbws24DUqrvSMVY43FBTU5k7twh8RSBzG823lhoKiWdRHZy=w526-h319-no){: .align-center}  
@@ -48,9 +51,11 @@ You will see the Group Merge interface appear, like so:
 ![Activated add-on side panel](https://lh3.googleusercontent.com/pw/ACtC-3evDtIezaBxpPAtlkrjm5qrrtOAd4dCAqokNB3oxxqlrWqJ0kl8dUIyNww0jW0TcUn0fyN5W4CJ8_dnGOgZyQHin-y6uTWn-Icdd4BLn3rMplV6L5u-KZcoHDd3NSi3FF59zrg3C6a3H4UvA4qGKovY=w1102-h567-no){: .align-center} 
 
 ### 4. Fill in the Required Items (1) - Google Sheets View
-![Section 1 in the add-on side panel view](https://lh3.googleusercontent.com/pw/ACtC-3eoYqIdli22onJcPT-_1VL27tXCHKHDJWIIDrRjxAuafKhWmr5jQjaRQJLOOjDpO0FLuIhnVLb2P3i2k7OniFmaiZImugsqDgDKeOeLrJhmZh1n9XQMMJlWdTSn37VlMdBT60jDSYDdwKzW272tY6Ic=w250-no){: .align-left}Scroll down the side panel to fill in the required items of Section 1 (Recipient List): **Spreadsheet URL**, **Sheet Name**, and **Recipient Field (column) Name**.
+Scroll down the side panel to fill in the required items of Section 1 (Recipient List): **Spreadsheet URL**, **Sheet Name**, and **To** recipient(s). The **CC** and **BCC** fields are optional and can be left blank.
 
-Note that **Spreadsheet URL** will be pre-filled with the URL of the currently open spreadsheet if you are opening this add-on from Google Sheets, as you are if you are following this how-to-use. See the [Settings](#settings) section for details of each item.
+- **Spreadsheet URL** will be pre-filled with the URL of the currently open spreadsheet if you are opening this add-on from Google Sheets, as you are if you are following this how-to-use. See the [Settings](#settings) section for details of each item.
+- Set the **To** recipient using placeholders like `{{Email}}`. You cannot insert two or more placeholders like `{{Email1}},{{Email2}}`; this will result in an error. You can instead use the **CC** and **BCC** recipient fields to send the respective personalized emails to multiple, variable recipients. Note that inserting one recipient placeholder and adding multiple comma-seperated fixed email addresses is acceptable, as in `{{Email}},fixedEmail1@example.com,fixedEmail2@example.com`.
+- \[Optional\] **CC** and **BCC** values are more flexible. You can use as many placeholders as you like, e.g., `{{cc1}},{{cc2}},{{cc3}}, ...`, as long as it's within the [Gmail's limitations](https://developers.google.com/apps-script/guides/services/quotas#current_quotas).
 
 After filling in the three items, scroll down to the bottom of the side panel view. Click on the button that says **SAVE USER SETTINGS**. 
 ![SAVE USER SETTINGS button](https://lh3.googleusercontent.com/pw/ACtC-3d1F8Rkr-W5IV8eSVU7yDOAxSwN3w6ek48FuIGpIYZ8QceLD8Da9nMQ0v-hmWAA_HJcgnez5ptQfvasgKExAaYg1FKUmU7NfASZqtfdg-D4d5N_e1ytzEhha1S6Zx398n3nin5K0ITcaBUUiYKVneHK=w500){: .align-center} 
@@ -64,9 +69,8 @@ Move on to the [Gmail UI](https://mail.google.com/mail/). Compose a draft to ser
 
 #### 5-1. To's, CC's, BCC's, and Reply-To's
 ![Editing the To's, CC's, and BCC's of the template draft](https://lh3.googleusercontent.com/pw/ACtC-3dx3QJ0UDGJQRSqqCGuOXPwwm8wg6F05RnqOv7GggiIigi8az1Vyb8yMz_zlTPgPXtSz6gjgzm1Af0tHFyvj7kDfaUp495HLo9dqlyVmTUpJzytrEmYBYHTTi0GTr1grCBgC3f8ETZ9OvbW7b7xG2jx=w1020-h468-no){: .align-center}  
-- The **To** of the draft should be left empty. The recipient email address will be inserted when executing mail merge.
-- You can designate fixed **CC** and/or **BCC** address(es) to include in every personalized emails.
-- **Reply-To** setting can be optionally enabled (but is disabled by default). See [Reply-To](#reply-to) in the Advanced Settings section.
+- The **To**, **CC**, and **BCC** values of the draft should basically be left empty. Use the add-on's settings in the side panel instead. Any placeholder values, like `{{Email}}`, entered during this composition view will be ignored in the merge process. Fixed values, like the `myTeam@mydomain.com` entered in the screenshot above, will be reflected on the merged mails.
+- **Reply-To** can be optionally designated via the add-on's side panel settings (but is disabled by default). See [Reply-To](#reply-to) in the Advanced Settings section.
 
 #### 5-2. Subject and Body
 You can use merge fields (placeholders) and [group merge](#5-5-group-merge) fields in the subject as well as the body of the template draft.  
@@ -138,7 +142,8 @@ Details of the respective items to be filled in on the add-on side panel view ca
 ### Basic Settings
 - **Spreadsheet URL**: Full URL of the Google Sheets to use as the list of recipients. This item will be pre-filled with the URL of the currently open spreadsheet if you are opening the add-on from Google Sheets, as you will be if you are following this how-to-use steps.
 - **Sheet Name**: Name of the worksheet of the recipient list, which should be `Sample List` in [the screenshot example above](#3-open-the-group-merge-add-on-from-sheets-side-panel).
-- **Recipient Field (column) Name**: Field (column) name that lists the recipient's email address, which should be `Email` in [the screenshot example above](#3-open-the-group-merge-add-on-from-sheets-side-panel).
+- **To**: Recipient's email address. You cannot insert two or more placeholders like `{{Email1}},{{Email2}}`; this will result in an error. You can instead use the **CC** and **BCC** recipient fields to send the respective personalized emails to multiple, variable recipients. Note that inserting one recipient placeholder and adding multiple comma-seperated fixed email addresses is acceptable, as in `{{Email}},fixedEmail1@example.com,fixedEmail2@example.com`.
+- **CC** and **BCC**: \[Optional\] CC and BCC recipients' email address. Use as many comma-separated placeholders as you like, e.g., `{{cc1}},{{cc2}},{{cc3}}, ...`, as long as it's within the [Gmail's limitations](https://developers.google.com/apps-script/guides/services/quotas#current_quotas).
 - **Subject of Template Draft Mail**: Word-for-word copy of the template subject. Be sure to make it unique; an error will be returned if there are two or more draft messages with the same subject.
 - **Enable Group Merge**: Switched on by default to enable [Group Merge](#5-5-group-merge).
 
@@ -163,6 +168,9 @@ The index field marker for group merge `{{i}}` can also be modified through the 
 **Pro Tips💡**  
 If HTML is enabled in your Gmail, make sure that your modified markers can still be detected in the HTML string.
 {: .notice--warning}
+
+#### Debug Mode
+Disabled by default, this mode visualizes the background settings and personal logs of the mail merge process to for the user when enabled. Users will receive emails on the debug info sent by their own Gmail/Google Workspace account for every mail merge process that they execute.
 
 {% endraw %}
 
