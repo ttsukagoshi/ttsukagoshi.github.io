@@ -2,7 +2,7 @@
 permalink: /add-ons/group-merge/
 title: "Group Merge: Mail Merge for Gmail"
 excerpt: Open-sourced Google Workspace add-on to send personalized emails based on Gmail template to multiple recipients. The unique Group Merge feature allows sender to group multiple contents for the same recipient in a single email.
-last_modified_at: 2021-03-23T01:00:00+09:00
+last_modified_at: 2021-03-24T01:00:00+09:00
 toc: true
 published: true
 ---
@@ -53,7 +53,7 @@ You will see the Group Merge interface appear, like so:
 ### 4. Fill in the Required Items (1) - Google Sheets View
 Scroll down the side panel to fill in the required items of Section 1 (Recipient List): **Spreadsheet URL**, **Sheet Name**, and **To** recipient(s). The **CC** and **BCC** fields are optional and can be left blank.
 
-- **Spreadsheet URL** will be pre-filled with the URL of the currently open spreadsheet if you are opening this add-on from Google Sheets, as you are if you are following this how-to-use. See the [Settings](#settings) section for details of each item.
+- **Spreadsheet URL** will be pre-filled with the URL of the currently open spreadsheet if you are opening this add-on from Google Sheets, as you are if you are following this how-to-use.
 - Set the **To** recipient using placeholders like `{{Email}}`. You cannot insert two or more placeholders like `{{Email1}},{{Email2}}`; this will result in an error. You can instead use the **CC** and **BCC** recipient fields to send the respective personalized emails to multiple, variable recipients. Note that inserting one recipient placeholder and adding multiple comma-seperated fixed email addresses is acceptable, as in `{{Email}},fixedEmail1@example.com,fixedEmail2@example.com`.
 - \[Optional\] **CC** and **BCC** values are more flexible. You can use as many placeholders as you like, e.g., `{{cc1}},{{cc2}},{{cc3}}, ...`, as long as it's within the [Gmail's limitations](https://developers.google.com/apps-script/guides/services/quotas#current_quotas).
 
@@ -94,6 +94,7 @@ See the [Group Merge](#5-5-group-merge) section for the details on the feature t
 
 **Pro Tips💡**  
 If you want to change the field markers, see [Field Markers](#field-markers-placeholders) in the Advanced Settings section.
+{: .notice--info}
 
 #### 5-3. File Attachments
 File attachments including in-line image attachments attached to the draft will be reflected on the merged emails.  
@@ -161,7 +162,7 @@ If you want to combine the Reply-To settings with **CREATE DRAFTS** rather than 
 The text value that will replace placeholders with empty or invalid data. Defaults to `NA`.
 
 #### Field Markers (Placeholders)
-The markers for merge fields and group merge fields can modified by adjusting the values in **Merge Field Marker** and **Group Field Marker**, respectively. You will need to be familiar with [the regular expressions of JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions). Note that the backslash itself does not need to be escaped, i.e., does not need to be repeated.
+The markers for merge fields and group merge fields can modified by adjusting the values in **Merge Field Marker** and **Group Field Marker**, respectively. You will need to be familiar with [the regular expressions of JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions). Be sure to use parentheses to denote the [capturing group](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges) to mark the content of the field, i.e., the word `field` in `{{field}}`. Note that the backslash itself does not need to be escaped, i.e., does not need to be repeated.
 
 The index field marker for group merge `{{i}}` can also be modified through the value **Row Index Marker**.
 
@@ -170,7 +171,10 @@ If HTML is enabled in your Gmail, make sure that your modified markers can still
 {: .notice--warning}
 
 #### Debug Mode
-Disabled by default, this mode visualizes the background settings and personal logs of the mail merge process to for the user when enabled. Users will receive emails on the debug info sent by their own Gmail/Google Workspace account for every mail merge process that they execute.
+**Under Review** This feature is currently under review by the Google team to be updated on the Google Workspace Marketplace.
+{: .notice--info}
+
+Disabled by default, this mode visualizes the background settings and personal logs of the mail merge process for the user when enabled. Users will receive emails on the debug info sent by their own Gmail/Google Workspace account for every mail merge process that they execute.
 
 {% endraw %}
 
@@ -215,6 +219,14 @@ The prefix `...` for the scopes in the table stands for `https://www.googleapis.
 | `.../gmail.modify` | View and modify but not delete your email | Search for the user's template Gmail draft based on its subject, read the contents of the designated template, and add label(s) that were on the template draft to the merged mail drafts. |
 | `.../spreadsheets` | Allows read/write access to your sheets and their properties. | Search for the spreadsheet using the URL that the user designated. Read the contents of the worksheet specified by the user by its sheet name in the spreadsheet. The only reason that this Add-on uses this broad scope rather than using `.../spreadsheets.readonly`, a read-only scope, is that Google limits the use of `SpreadsheetApp.openByUrl(url)`, the method used behind linking the URL you entered to the actual spreadsheet object, to add-ons with the authorization of the former scope. |
 | `.../userinfo.email` | View the user's email address | Used in the UI message to confirm if the user is sending/drafting the merged mail in the account that user intended as the sender. This message appears only if the user is merging the mails from the Google Sheets UI. |
+
+
+**Under Review** The scope(s) below are currently under review by the Google team to be updated on the Google Workspace Marketplace.
+{: .notice--info}
+
+| Scope | Meaning | How this Add-on uses this Scope |
+| --- | --- | --- |
+| `.../script.send_email` | Send email as you | Send email to yourself to notify debug info of the add-on. The add-on will also use this scope to notify you via email when a post-process mail merge execution is completed or terminated with an error. This post-process is triggered when a mail merge takes longer than [the 30-sec limit set for Google Workspace Add-on card actions](https://developers.google.com/workspace/add-ons/concepts/actions#callback_functions), upon which the merge will be carried over to a time-triggered background post-process. |
 
 ## Source Code
 Source code is available on GitHub. Please make requests for enhancements or reports of bugs via the GitHub issue. License regarding the use of the code is available on the GitHub repository.  
