@@ -2,7 +2,7 @@
 permalink: /ja/add-ons/group-merge/
 title: "Group Merge - Gmailのための差し込みメール作成"
 excerpt: Gmailのテンプレート（下書き）を元にして受信者ごとに宛名などを差し込んだメールを作成する、オープンソースのGoogle Workspaceアドオン。GmailとGoogleスプレッドシート連携。宛先リストに、同じ宛先（メールアドレス）が複数入力されている場合、内容を1通のメールにまとめて送信できる**「まとめ差し込み（Group Merge）」**機能つき。
-last_modified_at: 2021-03-16T01:00:00+09:00
+last_modified_at: 2021-03-24T01:00:00+09:00
 toc: true
 published: true
 ---
@@ -10,8 +10,7 @@ published: true
 [English]({{ site.url }}{{ site.baseurl }}/add-ons/group-merge/)/日本語  
 {: .align-center}
 
-[![Google Workspaceマーケットプレイスでこのアドオンを入手する](https://img.shields.io/badge/Google%20Workspace%20Add--on-Available-green)](https://workspace.google.com/marketplace/app/group_merge_mail_merge_for_gmail/586770229603) [![GitHub Super-Linter](https://github.com/ttsukagoshi/mail-merge-for-gmail/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter) [![Total alerts](https://img.shields.io/lgtm/alerts/g/ttsukagoshi/mail-merge-for-gmail.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/ttsukagoshi/mail-merge-for-gmail/alerts/)
-
+[![Google Workspaceマーケットプレイスでこのアドオンを入手する](https://img.shields.io/badge/Google%20Workspace%20Add--on-Available-green)](https://workspace.google.com/marketplace/app/group_merge_mail_merge_for_gmail/586770229603) [![GitHub Super-Linter](https://github.com/ttsukagoshi/mail-merge-for-gmail/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter) [![Total alerts](https://img.shields.io/lgtm/alerts/g/ttsukagoshi/mail-merge-for-gmail.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/ttsukagoshi/mail-merge-for-gmail/alerts/)  
 Gmailのテンプレート（下書き）を元にして受信者ごとに宛名などを差し込んだメールを作成する、オープンソースのGoogle Workspaceアドオン
 
 **レガシー（スプレッドシート）版**  
@@ -29,9 +28,7 @@ Google Workspaceアドオンとして提供される前に公開していたレ�
 {: .notice--info}
 
 ### 1. アドオンをインストール
-**準備中** 本アドオンは現在、Google Workspace Marketplaceに掲載するためのGoogleによる審査を受けています。審査を通過し、Marketplaceへの公開が完了し次第、以下のダミーURLを正式なものに差し替える予定です。
-{: .notice--warning}  
-[Google Workspace Marketplace](#)から本アドオンをインストール。  
+[Google Workspace Marketplace](https://workspace.google.com/marketplace/app/group_merge_mail_merge_for_gmail/586770229603)から本アドオンをインストール。  
 このインストール作業は基本的にユーザごとに1回行えば、以降、特別な作業は不要。アップデート等の更新は自動的に行われる。
 
 ### 2. 宛先リストを作成
@@ -43,6 +40,9 @@ Googleスプレッドシートで宛先リストを作成する。既存のス�
 4. スクリーンショット↑にあるように、ひらがなや漢字といった基本的な全角文字をヘッダ行（列名）に使うことも可能。
 5. 小文字の`i`単体を列名として使用することは、予期しないエラーを防ぐためにも避けること。後述しているように、この`i`はまとめ差し込み（Group Merge）機能の一部として使用されている要素。
 
+**ご注意ください** 1日に送信できるGmail/Google Workspaceメールの数は、[Googleによって制限されています](https://developers.google.com/apps-script/guides/services/quotas)。このアドオンは、あくまでその制限の中でメールを一括送信するためのものです。
+{: .notice--warning}
+
 ### 3. Googleスプレッドシートからアドオンを開く
 Group Mergeアドオンのアイコンをクリックし、サイドパネルを開く。  
 ![GoogleスプレッドシートのサイドパネルにあるGroup Mergeアイコン](https://lh3.googleusercontent.com/pw/ACtC-3ezL4YANFeGvtCQURMARrmqqCYY5uAxzFrztjhNKszO5LePgTrlJqi_MySzggICmdv04rRiONwK8AjPflkjX4Uhtgr3We-Ka4YI2l6Asjbws24DUqrvSMVY43FBTU5k7twh8RSBzG823lhoKiWdRHZy=w526-h319-no){: .align-center}  
@@ -50,9 +50,11 @@ Group Mergeアドオンのアイコンをクリックし、サイドパネルを
 ![サイドパネルで起動したGroup Mergeアドオン](https://lh3.googleusercontent.com/pw/ACtC-3evDtIezaBxpPAtlkrjm5qrrtOAd4dCAqokNB3oxxqlrWqJ0kl8dUIyNww0jW0TcUn0fyN5W4CJ8_dnGOgZyQHin-y6uTWn-Icdd4BLn3rMplV6L5u-KZcoHDd3NSi3FF59zrg3C6a3H4UvA4qGKovY=w1102-h567-no){: .align-center} 
 
 ### 4. 設定項目を入力する (1) - Googleスプレッドシート編
-![サイドパネル上のセクション1「宛先リストの設定」項目](https://lh3.googleusercontent.com/pw/ACtC-3eoYqIdli22onJcPT-_1VL27tXCHKHDJWIIDrRjxAuafKhWmr5jQjaRQJLOOjDpO0FLuIhnVLb2P3i2k7OniFmaiZImugsqDgDKeOeLrJhmZh1n9XQMMJlWdTSn37VlMdBT60jDSYDdwKzW272tY6Ic=w250-no){: .align-left}サイドパネルをスクロールしながら、セクション1「宛先リストの設定」の各項目を入力していく：**スプレッドシートURL**、**シート名**、および**宛先メールアドレスの列名**.
+サイドパネルをスクロールしながら、セクション1「宛先リストの設定」の各項目（**スプレッドシートURL**、**シート名**、および**宛先メールアドレス**）を入力していく。任意入力の**CC**と**BCC**は空白でも問題ない。
 
-Googleスプレッドシートからこのアドオンを開いている場合、**スプレッドシートURL**はアドオンを起動した時に開いているスプレッドシートのURLが自動入力されている。設定項目の詳細については[設定](#設定) を参照のこと。
+- **スプレッドシートURL**は、Googleスプレッドシートからこのアドオンを開いている場合、開いているスプレッドシートのURLが自動入力されている。
+- **To**は差し込みフィールド（merge fields）として入力する（例：`{{Email}}`）。2つ以上の差し込みフィールドは入力できないことに注意（不可の例：`{{Email1}},{{Email2}}`）。この場合はエラーが返される。宛先によって複数の可変な送信先を設定したい場合は**CC**や**BCC**を活用する。1つの差し込みフィールドに、複数の固定メールアドレスをカンマ区切りで入力することは可能（例：`{{Email}},fixedEmail1@example.com,fixedEmail2@example.com`）。
+- \[任意\] **CC**や**BCC**には、[Googleが定める制限内](https://developers.google.com/apps-script/guides/services/quotas#current_quotas)であれば、いくらでも差し込みフィールドを入れられる（例：`{{cc1}},{{cc2}},{{cc3}}, ...`）。
 
 セクション1「宛先リストの設定」の各項目を入力したのち、サイドパネルを下までスクロールして「**ユーザ設定として保存**」ボタンをクリック。   
 ![「ユーザ設定として保存」ボタン](https://lh3.googleusercontent.com/pw/ACtC-3d1F8Rkr-W5IV8eSVU7yDOAxSwN3w6ek48FuIGpIYZ8QceLD8Da9nMQ0v-hmWAA_HJcgnez5ptQfvasgKExAaYg1FKUmU7NfASZqtfdg-D4d5N_e1ytzEhha1S6Zx398n3nin5K0ITcaBUUiYKVneHK=w500){: .align-center} 
@@ -66,9 +68,8 @@ Googleスプレッドシートからこのアドオンを開いている場合�
 
 #### 5-1. To、CC、BCC、およびReply-To設定
 ![テンプレートのTo、CC、BCCを編集する](https://lh3.googleusercontent.com/pw/ACtC-3dx3QJ0UDGJQRSqqCGuOXPwwm8wg6F05RnqOv7GggiIigi8az1Vyb8yMz_zlTPgPXtSz6gjgzm1Af0tHFyvj7kDfaUp495HLo9dqlyVmTUpJzytrEmYBYHTTi0GTr1grCBgC3f8ETZ9OvbW7b7xG2jx=w1020-h468-no){: .align-center}  
-- メールの宛先となる**To**は空白のままにする。メール差し込み時に、アドオン設定で入力した「宛先となるメールアドレスが記載されているフィールド（列）名」の値が設定される宛先として設定される。
-- **CC**や**BCC**を固定値（普通のメールアドレス）として設定可能。全ての差し込みメールにCC・BCCとして設定される。
-- **Reply-To**設定はオプションで有効にすることができる（初期設定では無効）。[「高度な設定」の「Reply-To」](#reply-to)を参照のこと。
+- メールの編集画面では、基本的に**To**、**CC**、**BCC**は空白とする（アドオンのサイドパネルで設定するため）。編集画面で差し込みフィールド付きの宛先（例：`{{Email}}`）を入力しても、無効にされる。ただし上のスクリーンショット例のように`myTeam@mydomain.com`といった固定のメールアドレスであれば、差し込み後の各メールにも引き継がれる。
+- **Reply-To**設定はオプションでアドオンのサイドパネルから有効にして任意の値を指定することができる（初期設定では無効）。[「高度な設定」の「Reply-To」](#reply-to)を参照のこと。
 
 #### 5-2. 件名と本文
 テンプレートの件名及び本文では、差し込みフィールド（merge fields）`{{ }}`や[まとめ差し込み（group merge）](#5-5-group-merge)フィールド`[[ ]]`を使うことで、受信者ごとに個別化したメールを作成することができる。  
@@ -141,7 +142,8 @@ Gmailで作成される全ての下書きにはdraft IDという固有の文字�
 ### 基本的な設定
 - **スプレッドシートURL**：宛先リストとして使用するGoogleスプレッドシートのURL。アドオンをスプレッドシートから起動している場合、この項目は常にその時に開いているスプレッドシートのURLが自動入力される。
 - **シート名**：当該スプレッドシート内で、宛先リストが記載されているシートの名前。1行目が差込フィールド名となっていることを確認。
-- **宛先メールアドレスの列名**：宛先となるメールアドレスが記載されているフィールド（列）の名前。
+- **宛先メールアドレス**：宛先となるメールアドレスが記載されているフィールド（列）の名前。差し込みフィールド（merge fields）として入力する（例：`{{Email}}`）。2つ以上の差し込みフィールドは入力できないことに注意（不可の例：`{{Email1}},{{Email2}}`）。この場合はエラーが返される。宛先によって複数の可変な送信先を設定したい場合は**CC**や**BCC**を活用する。1つの差し込みフィールドに、複数の固定メールアドレスをカンマ区切りで入力することは可能（例：`{{Email}},fixedEmail1@example.com,fixedEmail2@example.com`）。
+- \[任意\] **CC**や**BCC**：CCやBCCとしてメールを送付する宛先。[Googleが定める制限内](https://developers.google.com/apps-script/guides/services/quotas#current_quotas)であれば、いくらでも差し込みフィールドを入れられる（例：`{{cc1}},{{cc2}},{{cc3}}, ...`）。
 - **テンプレートとなる下書きメールの件名**：テンプレートとして使用するGmail下書きの件名。入力した件名を持つ下書きが2通以上ある場合、エラーとなる。
 - **まとめ差し込み（Group Merge）を有効にする**：[まとめ差し込み（Group Merge）機能](#5-5-まとめ差し込みgroup-merge)を有効にするためのスイッチ。初期設定では有効となっている。
 
@@ -166,6 +168,12 @@ Reply-Toを設定した上で、「**下書き作成（差込テスト）**」�
 **Pro Tips💡**  
 GmailでHTML形式を有効にしたテンプレートを作成していて、フィールドマーカーを編集する場合は、HTML上でもマーカーが検出できることを確認しておくことをお勧めします。
 {: .notice--warning}
+
+#### デバッグモード
+**Under Review** この新機能を伴うアップデートは現在、Google Workspaceマーケットプレイスで掲載するためのGoogleによる審査を受けているところです。
+{: .notice--info}
+
+このモードを有効にすると、差し込みメール作成に伴う各種設定や、その操作における簡単なログがアドオン上で表示されるようになる。また、差し込みが行われるたびに、ユーザは自身のメールアドレスにてその内容をメールで通知される。初期設定では無効。
 
 {% endraw %}
 
