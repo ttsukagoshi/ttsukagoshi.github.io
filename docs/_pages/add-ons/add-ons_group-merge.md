@@ -2,7 +2,7 @@
 permalink: /add-ons/group-merge/
 title: "Group Merge: Mail Merge for Gmail"
 excerpt: Open-sourced Google Workspace add-on to send personalized emails based on Gmail template to multiple recipients. The unique Group Merge feature allows sender to group multiple contents for the same recipient in a single email.
-last_modified_at: 2021-03-24T01:00:00+09:00
+last_modified_at: 2021-03-30T06:35:00+09:00
 toc: true
 published: true
 ---
@@ -213,20 +213,20 @@ The prefix `...` for the scopes in the table stands for `https://www.googleapis.
 
 | Scope | Meaning | How this Add-on uses this Scope |
 | --- | --- | --- |
-| `.../script.locale` | View your locale and timezone information | Use your locale to provided localized side panel view and add-on messages. |
 | `.../gmail.addons.execute` | Execute as a Gmail add-on | Open and execute this Add-on. |
 | `.../gmail.compose` | Create, read, update, and delete drafts. Send messages and drafts. | Create merged draft mails, and send the created drafts on behalf of the user.|
 | `.../gmail.modify` | View and modify but not delete your email | Search for the user's template Gmail draft based on its subject, read the contents of the designated template, and add label(s) that were on the template draft to the merged mail drafts. |
+| `.../script.locale` | View your locale and timezone information | Use your locale to provided localized side panel view and add-on messages. |
+| `.../script.send_email` | Send email as you | Send email to yourself to notify debug info of the add-on. The add-on will also use this scope to notify you via email when a post-process mail merge execution is completed or terminated with an error. This post-process is triggered when a mail merge takes longer than [the 30-sec limit set for Google Workspace Add-on card actions](https://developers.google.com/workspace/add-ons/concepts/actions#callback_functions), upon which the merge will be carried over to a time-triggered background post-process. |
 | `.../spreadsheets` | Allows read/write access to your sheets and their properties. | Search for the spreadsheet using the URL that the user designated. Read the contents of the worksheet specified by the user by its sheet name in the spreadsheet. The only reason that this Add-on uses this broad scope rather than using `.../spreadsheets.readonly`, a read-only scope, is that Google limits the use of `SpreadsheetApp.openByUrl(url)`, the method used behind linking the URL you entered to the actual spreadsheet object, to add-ons with the authorization of the former scope. |
 | `.../userinfo.email` | View the user's email address | Used in the UI message to confirm if the user is sending/drafting the merged mail in the account that user intended as the sender. This message appears only if the user is merging the mails from the Google Sheets UI. |
 
-
-**Under Review** The scope(s) below are currently under review by the Google team to be updated on the Google Workspace Marketplace.
+<!--**Under Review** The scope(s) below are currently under review by the Google team to be updated on the Google Workspace Marketplace.
 {: .notice--info}
 
 | Scope | Meaning | How this Add-on uses this Scope |
 | --- | --- | --- |
-| `.../script.send_email` | Send email as you | Send email to yourself to notify debug info of the add-on. The add-on will also use this scope to notify you via email when a post-process mail merge execution is completed or terminated with an error. This post-process is triggered when a mail merge takes longer than [the 30-sec limit set for Google Workspace Add-on card actions](https://developers.google.com/workspace/add-ons/concepts/actions#callback_functions), upon which the merge will be carried over to a time-triggered background post-process. |
+| `.../script.send_email` | Send email as you | Send email to yourself to notify debug info of the add-on. The add-on will also use this scope to notify you via email when a post-process mail merge execution is completed or terminated with an error. This post-process is triggered when a mail merge takes longer than [the 30-sec limit set for Google Workspace Add-on card actions](https://developers.google.com/workspace/add-ons/concepts/actions#callback_functions), upon which the merge will be carried over to a time-triggered background post-process. |-->
 
 ## Source Code
 Source code is available on GitHub. Please make requests for enhancements or reports of bugs via the GitHub issue. License regarding the use of the code is available on the GitHub repository.  
