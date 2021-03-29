@@ -2,7 +2,7 @@
 permalink: /ja/add-ons/group-merge/
 title: "Group Merge - Gmailのための差し込みメール作成"
 excerpt: Gmailのテンプレート（下書き）を元にして受信者ごとに宛名などを差し込んだメールを作成する、オープンソースのGoogle Workspaceアドオン。GmailとGoogleスプレッドシート連携。宛先リストに、同じ宛先（メールアドレス）が複数入力されている場合、内容を1通のメールにまとめて送信できる**「まとめ差し込み（Group Merge）」**機能つき。
-last_modified_at: 2021-03-24T01:00:00+09:00
+last_modified_at: 2021-03-30T06:35:00+09:00
 toc: true
 published: true
 ---
