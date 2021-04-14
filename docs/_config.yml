@@ -70,9 +70,9 @@ author:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://www.scriptable-assets.page/"
-    # - label: "Twitter"
-    #   icon: "fab fa-fw fa-twitter-square"
-    #   url: "https://twitter.com/"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/ScriptableA"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/ttsukagoshi/"
@@ -82,9 +82,12 @@ author:
 
 footer:
   links:
-    # - label: "Twitter"
-    #   icon: "fab fa-fw fa-twitter-square"
-    #   url: "https://twitter.com/"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/ScriptableA"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/ttsukagoshi/"
     # - label: "Instagram"
     #   icon: "fab fa-fw fa-instagram"
     #   url: "https://instagram.com/"
@@ -92,9 +95,6 @@ footer:
       url: "https://www.scriptable-assets.page/terms-and-conditions/"
     - label: "Privacy Policy"
       url: "https://www.scriptable-assets.page/privacy-policy/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/ttsukagoshi/"
 
 defaults:
   # _posts
