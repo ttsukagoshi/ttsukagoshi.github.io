@@ -2,7 +2,7 @@
 permalink: /chrome-extensions/openbd-checker/
 title: openBD Checker
 excerpt: Check Reference Book Data Registered on openBD
-last_modified_at: 2021-01-12T00:00:00+09:00
+last_modified_at: 2021-08-05T18:00:00+09:00
 toc: true
 ---
 
