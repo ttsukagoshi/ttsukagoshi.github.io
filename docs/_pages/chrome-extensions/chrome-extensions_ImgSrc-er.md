@@ -6,7 +6,7 @@ last_modified_at: 2021-08-05T18:00:00+09:00
 toc: true
 ---
 
-![Chrome Web Store](https://img.shields.io/chrome-web-store/v/mmalpdcdmbloijpgoagaeallfnmioika) [![GitHub Super-Linter](https://github.com/ttsukagoshi/chrome-ext_ImgSrc-er/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter) [![Total alerts](https://img.shields.io/lgtm/alerts/g/ttsukagoshi/chrome-ext_ImgSrc-er.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/ttsukagoshi/imgsrc-er/alerts/)  
+![Chrome Web Store](https://img.shields.io/chrome-web-store/v/mmalpdcdmbloijpgoagaeallfnmioika) [![GitHub Super-Linter](https://github.com/ttsukagoshi/imgsrc-er/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter) [![Total alerts](https://img.shields.io/lgtm/alerts/g/ttsukagoshi/imgsrc-er.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/ttsukagoshi/imgsrc-er/alerts/)  
 Convert image link URL into an `<img>` tag
 
 ![Image Sourcer icon]({{ site.url }}{{ site.baseurl }}/assets/images/ImgSrc-er/ImgSrc-er128.png){: .align-center}

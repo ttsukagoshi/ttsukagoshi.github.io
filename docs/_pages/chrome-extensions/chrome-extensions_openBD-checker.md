@@ -6,7 +6,7 @@ last_modified_at: 2021-08-05T18:00:00+09:00
 toc: true
 ---
 
-![Chrome Web Store](https://img.shields.io/chrome-web-store/v/jmbcpombnleepfponcjibgeohkfcocgg) [![GitHub Super-Linter](https://github.com/ttsukagoshi/chrome-ext_openBD-checker/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter) [![Total alerts](https://img.shields.io/lgtm/alerts/g/ttsukagoshi/chrome-ext_openBD-checker.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/ttsukagoshi/openbd-checker/alerts/)  
+![Chrome Web Store](https://img.shields.io/chrome-web-store/v/jmbcpombnleepfponcjibgeohkfcocgg) [![GitHub Super-Linter](https://github.com/ttsukagoshi/openbd-checker/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter) [![Total alerts](https://img.shields.io/lgtm/alerts/g/ttsukagoshi/openbd-checker.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/ttsukagoshi/openbd-checker/alerts/)  
 Check Reference Book Data Registered on openBD
 
 ![openBD Checker icon]({{ site.url }}{{ site.baseurl }}/assets/images/openBD-checker/books128.png){: .align-center}
