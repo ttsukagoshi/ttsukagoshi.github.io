@@ -32,6 +32,8 @@ Copy [this sample spreadsheet](https://docs.google.com/spreadsheets/d/1JvO090Vcg
 | `90_Spreadsheets` | Delete everything **except the first header row**.                                                                |
 | `99_Options`      | Go over the parameters that you can set for this status monitoring and edit the `VALUE` items to suit your needs. |
 
+Worksheets not listed above can be left alone; they will be updated automatically.
+
 ### Set Triggers
 
 From the spreadsheet menu, select `Web Status` > `Triggers` > `Set Status Check Trigger`/`Set Log Extraction Trigger` to set up time-based triggers to conduct automated status checks. The latest results will be shown in the `01_Dashboard` worksheet.
