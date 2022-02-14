@@ -1,7 +1,7 @@
 ---
 permalink: /terms-and-conditions/
 title: 'Terms and Conditions'
-last_modified_at: 2021-08-06T00:00:00+09:00
+last_modified_at: 2022-02-15T02:30:00+09:00
 toc: true
 ---
 
@@ -23,6 +23,7 @@ This Website serves as a hub to a collection of open-source solutions that I own
   - [openBD Checker](https://www.scriptable-assets.page/chrome-extensions/openbd-checker/)
 - [Apps Script Solutions](https://www.scriptable-assets.page/gas-solutions/)
   - [Mail Merge for Gmail (Legacy Ver.)](https://www.scriptable-assets.page/gas-solutions/mail-merge-for-gmail/)
+  - [Website Status Monitoring using Google Sheets](https://www.scriptable-assets.page/gas-solutions/website-monitoring-by-gas/)
   - [WordPress XML to Google Sheets](https://www.scriptable-assets.page/gas-solutions/wordpress-xml-to-sheets/)
 
 ## Use of the Services
@@ -66,13 +67,13 @@ THIS WEBSITE AND THE SERVICES ARE PROVIDED ON AN “AS IS” BASIS, WITHOUT WARR
 
 IN NO EVENT SHALL I BE LIABLE FOR ANY CONSEQUENTIAL, INCIDENTAL, INDIRECT, SPECIAL, PUNITIVE, OR OTHER LOSS OR DAMAGE WHATSOEVER (INCLUDING BUT NOT LIMITED TO LOSS OF DATA, LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, COMPUTER FAILURE, LOSS OF BUSINESS INFORMATION), ARISING OUT OF OR CAUSED BY YOUR USE OF OR INABILITY TO USE THE SERVICE OR THIS WEBSITE, EVEN IF I HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. YOUR SOLE AND EXCLUSIVE REMEDY FOR ANY DISPUTE WITH ME RELATED TO ANY OF THE SERVICE SHALL BE TERMINATION OF SUCH SERVICE. IN NO EVENT SHALL MY ENTIRE LIABILITY TO YOU IN RESPECT OF ANY SERVICE, WHETHER DIRECT OR INDIRECT, EXCEED THE FEES PAID BY YOU TOWARDS SUCH SERVICE.
 
+Neither party shall be liable to the other party or any third party for failure or delay in performing its obligations under these Terms when such failure or delay is due to any cause beyond the control of the party concerned, including, without limitation, acts of God, acts of government, fire, or flood, provided that upon cessation of such events such party shall thereupon promptly perform or complete the performance of its obligations hereunder.
+
 ## Additional Terms
 
 In addition to the Terms laid herein, each Service may provide additional terms and conditions for using it, as explicitly provided in the `Terms and Conditions` section of the respective [Services' page](#services).
 
 ## Governing Law
-
-Neither party shall be liable to the other party or any third party for failure or delay in performing its obligations under these Terms when such failure or delay is due to any cause beyond the control of the party concerned, including, without limitation, acts of God, acts of government, fire, or flood, provided that upon cessation of such events such party shall thereupon promptly perform or complete the performance of its obligations hereunder.
 
 These Terms, their interpretation, performance or any breach thereof, will be construed in accordance with, and all questions with respect thereto will be determined by, the laws of Japan. Both parties hereby irrevocably submit any disputes under these Terms to the jurisdiction of the local court located in Akita City, Akita, Japan.
 
