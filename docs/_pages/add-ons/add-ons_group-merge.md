@@ -2,7 +2,7 @@
 permalink: /add-ons/group-merge/
 title: 'Group Merge: Mail Merge for Gmail'
 excerpt: Open-sourced Google Workspace add-on to send personalized emails based on Gmail template to multiple recipients. The unique Group Merge feature allows sender to group multiple contents for the same recipient in a single email.
-last_modified_at: 2021-05-30T01:00:00+09:00
+last_modified_at: 2022-02-15T03:00:00+09:00
 toc: true
 published: true
 ---
