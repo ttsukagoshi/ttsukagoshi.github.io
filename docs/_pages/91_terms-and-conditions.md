@@ -1,7 +1,7 @@
 ---
 permalink: /terms-and-conditions/
 title: 'Terms and Conditions'
-last_modified_at: 2022-02-15T02:30:00+09:00
+last_modified_at: 2022-05-05T01:30:00+09:00
 toc: true
 ---
 
@@ -14,17 +14,7 @@ The following Terms and Conditions ("Terms") govern Your access to and use of th
 
 ## Services
 
-This Website serves as a hub to a collection of open-source solutions that I own. The term "Service" or "Services" in these Terms refer to one or all of the such solutions explicitly provided in this Website. The following is a complete list of the Services implied herein:
-
-- [Google Workspace Add-ons](https://www.scriptable-assets.page/add-ons/)
-  - [Group Merge](https://www.scriptable-assets.page/add-ons/group-merge/)
-- [Google Chrome Extensions](https://www.scriptable-assets.page/chrome-extensions/)
-  - [ImgSrc-er](https://www.scriptable-assets.page/chrome-extensions/imgsrc-er/)
-  - [openBD Checker](https://www.scriptable-assets.page/chrome-extensions/openbd-checker/)
-- [Apps Script Solutions](https://www.scriptable-assets.page/gas-solutions/)
-  - [Mail Merge for Gmail (Legacy Ver.)](https://www.scriptable-assets.page/gas-solutions/mail-merge-for-gmail/)
-  - [Website Status Monitoring using Google Sheets](https://www.scriptable-assets.page/gas-solutions/website-monitoring-by-gas/)
-  - [WordPress XML to Google Sheets](https://www.scriptable-assets.page/gas-solutions/wordpress-xml-to-sheets/)
+This Website serves as a hub to a collection of open-source solutions that I own. The term "Service" or "Services" in these Terms refer to one or all of the such solutions explicitly provided in this Website.
 
 ## Use of the Services
 
