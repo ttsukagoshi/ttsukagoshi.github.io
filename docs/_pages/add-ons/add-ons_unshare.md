@@ -2,7 +2,7 @@
 permalink: /add-ons/unshare/
 title: 'Unshare'
 excerpt: Open-sourced Google Workspace Add-on to "un"share Google Drive files that you own with a tap.
-last_modified_at: 2022-06-03T18:00:00+09:00
+last_modified_at: 2022-06-20T03:00:00+09:00
 toc: true
 published: true
 ---
@@ -13,13 +13,13 @@ published: true
 <!--[![Get this add-on from Google Workspace Marketplace](https://img.shields.io/badge/Google%20Workspace%20Add--on-Available-green?style=flat-square)](https://workspace.google.com/marketplace/app/group_merge_mail_merge_for_gmail/586770229603)-->
 
 [![clasp](https://img.shields.io/badge/built%20with-clasp-4285f4.svg?style=flat-square)](https://github.com/google/clasp) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)  
-[![Lint Code Base](https://github.com/ttsukagoshi/unshare/actions/workflows/linter.yml/badge.svg)](https://github.com/ttsukagoshi/unshare/actions/workflows/linter.yml) [![Deploy](https://github.com/ttsukagoshi/unshare/actions/workflows/deploy.yml/badge.svg)](https://github.com/ttsukagoshi/unshare/actions/workflows/deploy.yml)
+[![Lint Code Base](https://github.com/ttsukagoshi/unshare/actions/workflows/linter.yml/badge.svg)](https://github.com/ttsukagoshi/unshare/actions/workflows/linter.yml) [![CodeQL](https://github.com/ttsukagoshi/unshare/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/ttsukagoshi/unshare/actions/workflows/codeql-analysis.yml) [![Deploy](https://github.com/ttsukagoshi/unshare/actions/workflows/deploy.yml/badge.svg)](https://github.com/ttsukagoshi/unshare/actions/workflows/deploy.yml)
 
 Open-sourced Google Workspace Add-on to "un"share Google Drive files that you own with a tap.
 
 ## Overview
 
-Unshare is a Google Workspace Add-on to delete all editors, commenters, and viewers from the selected Google Drive file/folder except for you, the owner. If the target file/folder is shared with a class of users who have general access, for example, if it is shared with the user's domain, that access setting will be changed to Private, where only the users explicitly granted permission can access.
+![Unshare icon](https://lh3.googleusercontent.com/pw/AM-JKLUeE_Ws9D1PaPh9_8CVmjpbscs1hQc8viJ_eBoZQ6OdolI3GyNrfAoWAy3w7hhvM2NSWY1EdFLsvCu2j5U7gtExx7Ou5uEctsImUiIvzDlKFRJl0LwRVqBMD7j2FHAiIsfS0-Vy7aFn5kaDh4MSvXZ4=s96-no){: .align-left} Unshare is a Google Workspace Add-on to bulk remove all editors, commenters, and viewers from the selected Google Drive file/folder except for you, the owner. If the target file/folder is shared with a class of users who have general access, for example, if it is shared with the user's domain, that access setting will be changed to Private, where only the users explicitly granted permission can access.
 
 ## How to use
 
