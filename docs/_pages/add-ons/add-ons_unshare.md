@@ -7,8 +7,8 @@ toc: true
 published: true
 ---
 
-<!--English/[日本語]({{ site.url }}{{ site.baseurl }}/ja/add-ons/unshare/)
-{: .align-center}-->
+English/[日本語]({{ site.url }}{{ site.baseurl }}/ja/add-ons/unshare/)
+{: .align-center}
 
 <!--[![Get this add-on from Google Workspace Marketplace](https://img.shields.io/badge/Google%20Workspace%20Add--on-Available-green?style=flat-square)](https://workspace.google.com/marketplace/app/group_merge_mail_merge_for_gmail/586770229603)-->
 
