@@ -2,7 +2,7 @@
 permalink: /ja/add-ons/unshare/
 title: 'Unshare'
 excerpt: Googleドライブ内にある指定したファイルの共同編集者＆閲覧者を一括で削除するための、オープンソースのGoogle Workspaceアドオン
-last_modified_at: 2022-06-20T03:00:00+09:00
+last_modified_at: 2022-06-21T00:30:00+09:00
 toc: true
 published: true
 ---
@@ -10,9 +10,7 @@ published: true
 [English]({{ site.url }}{{ site.baseurl }}/add-ons/unshare/)/日本語
 {: .align-center}
 
-<!--[![Google Workspaceマーケットプレイスでこのアドオンを入手する](https://img.shields.io/badge/Google%20Workspace%20Add--on-Available-green?style=flat-square)](https://workspace.google.com/marketplace/app/group_merge_mail_merge_for_gmail/586770229603)-->
-
-[![clasp](https://img.shields.io/badge/built%20with-clasp-4285f4.svg?style=flat-square)](https://github.com/google/clasp) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)  
+[![Google Workspaceマーケットプレイスでこのアドオンを入手する](https://img.shields.io/badge/Google%20Workspace%20Add--on-Available-green?style=flat-square)](https://workspace.google.com/marketplace/app/unshare/493847743062) [![clasp](https://img.shields.io/badge/built%20with-clasp-4285f4.svg?style=flat-square)](https://github.com/google/clasp) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)  
 [![Lint Code Base](https://github.com/ttsukagoshi/unshare/actions/workflows/linter.yml/badge.svg)](https://github.com/ttsukagoshi/unshare/actions/workflows/linter.yml) [![CodeQL](https://github.com/ttsukagoshi/unshare/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/ttsukagoshi/unshare/actions/workflows/codeql-analysis.yml) [![Deploy](https://github.com/ttsukagoshi/unshare/actions/workflows/deploy.yml/badge.svg)](https://github.com/ttsukagoshi/unshare/actions/workflows/deploy.yml)
 
 Google ドライブ内にある指定したファイルの共同編集者＆閲覧者を一括で削除するための、オープンソースの Google Workspace アドオン
@@ -25,11 +23,8 @@ Google ドライブ内にある指定したファイルの共同編集者＆閲�
 
 ### 1. アドオンをインストール
 
-Google Workspace Marketplace から本アドオンをインストール。  
+[Google Workspace Marketplace](https://workspace.google.com/marketplace/app/unshare/493847743062) から本アドオンをインストール。  
 このインストール作業は基本的にユーザごとに 1 回行えば、以降、特別な作業は不要。アップデート等の更新は自動的に行われる。
-
-ただいま本アドオンは Google 社により審査中です。審査が完了次第、Google Workspace Marketplace で公開される予定です。
-{: .notice--warning}
 
 ### 2. ファイル/フォルダを選択する
 
