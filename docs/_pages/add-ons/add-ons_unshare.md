@@ -2,7 +2,7 @@
 permalink: /add-ons/unshare/
 title: 'Unshare'
 excerpt: Open-sourced Google Workspace Add-on to "un"share Google Drive files that you own with a tap.
-last_modified_at: 2022-06-20T03:00:00+09:00
+last_modified_at: 2022-06-21T00:30:00+09:00
 toc: true
 published: true
 ---
@@ -10,9 +10,7 @@ published: true
 English/[日本語]({{ site.url }}{{ site.baseurl }}/ja/add-ons/unshare/)
 {: .align-center}
 
-<!--[![Get this add-on from Google Workspace Marketplace](https://img.shields.io/badge/Google%20Workspace%20Add--on-Available-green?style=flat-square)](https://workspace.google.com/marketplace/app/group_merge_mail_merge_for_gmail/586770229603)-->
-
-[![clasp](https://img.shields.io/badge/built%20with-clasp-4285f4.svg?style=flat-square)](https://github.com/google/clasp) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)  
+[![Get this add-on from Google Workspace Marketplace](https://img.shields.io/badge/Google%20Workspace%20Add--on-Available-green?style=flat-square)](https://workspace.google.com/marketplace/app/unshare/493847743062) [![clasp](https://img.shields.io/badge/built%20with-clasp-4285f4.svg?style=flat-square)](https://github.com/google/clasp) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)  
 [![Lint Code Base](https://github.com/ttsukagoshi/unshare/actions/workflows/linter.yml/badge.svg)](https://github.com/ttsukagoshi/unshare/actions/workflows/linter.yml) [![CodeQL](https://github.com/ttsukagoshi/unshare/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/ttsukagoshi/unshare/actions/workflows/codeql-analysis.yml) [![Deploy](https://github.com/ttsukagoshi/unshare/actions/workflows/deploy.yml/badge.svg)](https://github.com/ttsukagoshi/unshare/actions/workflows/deploy.yml)
 
 Open-sourced Google Workspace Add-on to "un"share Google Drive files that you own with a tap.
@@ -25,10 +23,7 @@ Open-sourced Google Workspace Add-on to "un"share Google Drive files that you ow
 
 ### 1. Install the add-on
 
-Install this add-on from the Google Workspace Marketplace. You have only to do this once per user; updates to the add-on will be automatically distributed via the Marketplace.
-
-This add-on is currently under review by Google. It will be made available on the Google Workspace Marketplace as soon as the verification is complete.
-{: .notice--warning}
+Install this add-on from [the Google Workspace Marketplace](https://workspace.google.com/marketplace/app/unshare/493847743062). You have only to do this once per user; updates to the add-on will be automatically distributed via the Marketplace.
 
 ### 2. Select target file/folder(s)
 
