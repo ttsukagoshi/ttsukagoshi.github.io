@@ -237,7 +237,7 @@ Gmail で HTML 形式を有効にしたテンプレートを作成していて�
 
 ## ソースコード
 
-本アドオンのソースコードは GitHub 上で公開されています。機能追加・強化に関する要望や、バグ等の報告については GitHub 上の Issue によりご連絡ください。ソースコードに関するライセンスは、当該 GitHub レポジトリで明示しています。
+本アドオンのソースコードは GitHub 上で公開されています。機能追加・強化に関する要望や、バグ等の報告については GitHub 上の Issues によりご連絡ください。ソースコードに関するライセンスは、当該 GitHub レポジトリで明示しています。
 
 [GitHub を見る](https://github.com/ttsukagoshi/mail-merge-for-gmail){: .btn .btn--primary .align-right}
 
