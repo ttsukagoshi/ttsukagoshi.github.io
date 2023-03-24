@@ -1,8 +1,8 @@
 ---
 permalink: /add-ons/sheetsl/
 title: 'SheetsL: DeepL Translation for Google Sheets&trade;'
-excerpt: Open-sourced Google Sheets addon to use DeepL translation. Translate the contents of the selected range and paste them in the range of cells adjacent to the original range.
-last_modified_at: 2023-03-20T02:00:00+09:00
+excerpt: Open-sourced Google Sheets add-on to use DeepL translation. Translate the contents of the selected range and paste them in the range of cells adjacent to the original range.
+last_modified_at: 2023-03-25T02:00:00+09:00
 toc: true
 published: true
 ---
@@ -15,7 +15,7 @@ English/[日本語]({{ site.url }}{{ site.baseurl }}/ja/add-ons/sheetsl/)
 [![CodeQL](https://github.com/ttsukagoshi/mail-merge-for-gmail/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/ttsukagoshi/mail-merge-for-gmail/actions/workflows/codeql-analysis.yml) [![Deploy](https://github.com/ttsukagoshi/mail-merge-for-gmail/actions/workflows/deploy.yml/badge.svg)](https://github.com/ttsukagoshi/mail-merge-for-gmail/actions/workflows/deploy.yml) [![Labeler](https://github.com/ttsukagoshi/mail-merge-for-gmail/actions/workflows/label.yml/badge.svg)](https://github.com/ttsukagoshi/mail-merge-for-gmail/actions/workflows/label.yml) [![Lint Code Base](https://github.com/ttsukagoshi/mail-merge-for-gmail/actions/workflows/linter.yml/badge.svg)](https://github.com/ttsukagoshi/mail-merge-for-gmail/actions/workflows/linter.yml)
 -->
 
-Open-sourced Google Sheets&trade; addon to use DeepL translation. Translate the contents of the selected range and paste them in the range of cells adjacent to the original range.
+Open-sourced Google Sheets&trade; add-on to use DeepL translation. Translate the contents of the selected range and paste them in the range of cells adjacent to the original range.
 
 ![SheetsL icon]({{ site.url }}{{ site.baseurl }}/assets/images/sheetsl/SheetsL_Application Card Banner_220.png)
 
@@ -85,10 +85,6 @@ This section constitutes an addition to the [Terms and Conditions]({{ site.url }
 {: .notice--info}
 
 **SheetsL: DeepL Translation for Google Sheets&trade;**, hereinafter referred to as the Add-on in this section, is in compliance with the [Privacy Policy]({{ site.url }}{{ site.baseurl }}/privacy-policy/) with regard to the processing of your private data, which includes the contents of your Google Sheets files and the authentication information for your DeepL API account. Please note that the handling of your data by the DeepL API is outside the scope of this policy; please be sure to understand their privacy policy as well when creating your DeepL API account.
-
-**Disclosure**  
-The Add-on's use and transfer to any other app of information received from Google APIs will adhere to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes), including the Limited Use requirements.
-{: .notice--warning}
 
 Separate from these policies, Google provides protection for the add-on users' privacy by limiting the _scope_ of authorized information that an add-on can have access to, called the [Google OAuth Scopes](https://developers.google.com/identity/protocols/oauth2/scopes). The list of OAuth Scopes that this Add-on requests from the user is as follows. As you may notice, Google does not define an authorization scope that is completely fit to the purpose and required functions of this Add-on in their [Google Sheets](https://developers.google.com/sheets/api/guides/authorizing#OAuth2Authorizing) authorization scopes, so some of the scopes may seem broader than necessary. As a supplement to the Terms and Conditions, this is a legally binding statement that this Add-on will not process any authorized data in the manner not described in the below table:
 
