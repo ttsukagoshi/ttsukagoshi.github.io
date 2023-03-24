@@ -2,7 +2,7 @@
 permalink: /ja/add-ons/sheetsl/
 title: 'SheetsL: Googleスプレッドシート&trade;のためのDeepL翻訳'
 excerpt: DeepL翻訳を直接利用するための、オープンソースのGoogleスプレッドシートアドオン。選択したセル範囲の内容をDeepL APIで翻訳して、その結果を、選択したセル範囲の右隣に表示する。
-last_modified_at: 2023-03-13T02:00:00+09:00
+last_modified_at: 2023-03-25T02:00:00+09:00
 toc: true
 published: true
 ---
