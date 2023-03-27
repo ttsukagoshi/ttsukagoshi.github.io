@@ -1,8 +1,8 @@
 ---
 permalink: /ja/add-ons/sheetsl/
-title: 'SheetsL: Googleスプレッドシート&trade;のためのDeepL翻訳'
-excerpt: DeepL翻訳を直接利用するための、オープンソースのGoogleスプレッドシートアドオン。選択したセル範囲の内容をDeepL APIで翻訳して、その結果を、選択したセル範囲の右隣に表示する。
-last_modified_at: 2023-03-25T02:00:00+09:00
+title: 'SheetsL: Google スプレッドシート&trade;のための DeepL 翻訳'
+excerpt: DeepL&trade; 翻訳を Google スプレッドシート&trade; で直接利用するためのアドオン。無料＆オープンソース。
+last_modified_at: 2023-03-28T08:00:00+09:00
 toc: true
 published: true
 ---
@@ -15,7 +15,7 @@ published: true
 [![CodeQL](https://github.com/ttsukagoshi/mail-merge-for-gmail/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/ttsukagoshi/mail-merge-for-gmail/actions/workflows/codeql-analysis.yml) [![Deploy](https://github.com/ttsukagoshi/mail-merge-for-gmail/actions/workflows/deploy.yml/badge.svg)](https://github.com/ttsukagoshi/mail-merge-for-gmail/actions/workflows/deploy.yml) [![Labeler](https://github.com/ttsukagoshi/mail-merge-for-gmail/actions/workflows/label.yml/badge.svg)](https://github.com/ttsukagoshi/mail-merge-for-gmail/actions/workflows/label.yml) [![Lint Code Base](https://github.com/ttsukagoshi/mail-merge-for-gmail/actions/workflows/linter.yml/badge.svg)](https://github.com/ttsukagoshi/mail-merge-for-gmail/actions/workflows/linter.yml)
 -->
 
-DeepL 翻訳を直接利用するための、オープンソースの Google スプレッドシートアドオン。選択したセル範囲の内容を DeepL API で翻訳して、その結果を、選択したセル範囲の右隣に表示する。
+DeepL&trade; 翻訳を Google スプレッドシート&trade; で直接利用するための、オープンソースのアドオンです。選択したセル範囲の内容を DeepL API で翻訳して、その結果を、選択したセル範囲の右隣に表示します。DeepL API Free または Pro アカウントが必要です。
 
 ![SheetsL icon]({{ site.url }}{{ site.baseurl }}/assets/images/sheetsl/SheetsL_Application Card Banner_220.png)
 
