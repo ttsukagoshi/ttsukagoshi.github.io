@@ -96,9 +96,11 @@ footer:
     #   icon: "fab fa-fw fa-instagram"
     #   url: "https://instagram.com/"
     - label: 'Terms & Conditions'
-      url: 'https://www.scriptable-assets.page/terms-and-conditions/'
+      url: '/terms-and-conditions/'
     - label: 'Privacy Policy'
-      url: 'https://www.scriptable-assets.page/privacy-policy/'
+      url: '/privacy-policy/'
+    - label: 'Contact'
+      url: '/contact/'
 
 defaults:
   # _posts
