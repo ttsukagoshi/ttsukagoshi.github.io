@@ -8,7 +8,7 @@
 # in the templates via {{ site.myvariable }}.
 locale: en-US
 title: Scriptable Assets
-title_separator: "|"
+title_separator: '|'
 email: taro.tsukagoshi@gmail.com
 description: Coding Kaizen into Our Workspace
 # description: >- # this means to ignore newlines until "baseurl:"
@@ -28,7 +28,7 @@ permalink: /:categories/:title/
 # paginate_path: /page:num/
 timezone: Asia/Tokyo
 # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-breadcrumbs: true  # disabled by default
+breadcrumbs: true # disabled by default
 
 include:
   - _pages
@@ -57,49 +57,55 @@ plugins:
 
 # Analytics
 analytics:
-  provider: "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider: 'google-gtag' # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id: "G-Y4SZ8HKEJP"
+    tracking_id: 'G-Y4SZ8HKEJP'
     anonymize_ip: false # false (default)
 
+# Site search using Lunr
+lunr:
+  search_within_pages: true
+
 author:
-  name   : "Taro TSUKAGOSHI"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "An amateur engineer wiggling through his documents, searching continuously for ways to increase productivity and make a better workplace."
+  name: 'Taro TSUKAGOSHI'
+  avatar: '/assets/images/bio-photo.jpg'
+  bio: 'DVM, developer, and a university staff. Advocate for accessibility, equity, and efficiency with empathy.'
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://www.scriptable-assets.page/"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/ScriptableA"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/ttsukagoshi/"
+    - label: 'Website'
+      icon: 'fas fa-fw fa-link'
+      url: 'https://www.scriptable-assets.page/'
+    - label: 'Twitter'
+      icon: 'fab fa-fw fa-twitter-square'
+      url: 'https://twitter.com/ScriptableA'
+    - label: 'GitHub'
+      icon: 'fab fa-fw fa-github'
+      url: 'https://github.com/ttsukagoshi/'
     # - label: "Instagram"
     #   icon: "fab fa-fw fa-instagram"
     #   url: "https://instagram.com/"
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/ScriptableA"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/ttsukagoshi/"
+    - label: 'Twitter'
+      icon: 'fab fa-fw fa-twitter-square'
+      url: 'https://twitter.com/ScriptableA'
+    - label: 'GitHub'
+      icon: 'fab fa-fw fa-github'
+      url: 'https://github.com/ttsukagoshi/'
     # - label: "Instagram"
     #   icon: "fab fa-fw fa-instagram"
     #   url: "https://instagram.com/"
-    - label: "Terms & Conditions"
-      url: "https://www.scriptable-assets.page/terms-and-conditions/"
-    - label: "Privacy Policy"
-      url: "https://www.scriptable-assets.page/privacy-policy/"
+    - label: 'Terms & Conditions'
+      url: '/terms-and-conditions/'
+    - label: 'Privacy Policy'
+      url: '/privacy-policy/'
+    - label: 'Contact'
+      url: '/contact/'
 
 defaults:
   # _posts
   - scope:
-      path: ""
+      path: ''
       type: posts
     values:
       layout: single
@@ -110,7 +116,7 @@ defaults:
       related: true
   # _pages
   - scope:
-      path: "_pages"
+      path: '_pages'
       type: pages
     values:
       layout: single

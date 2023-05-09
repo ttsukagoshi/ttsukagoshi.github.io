@@ -1,7 +1,7 @@
 ---
 permalink: /privacy-policy/
 title: 'Privacy Policy'
-last_modified_at: 2023-03-25T02:00:00+09:00
+last_modified_at: 2023-05-10T04:30:00+09:00
 toc: true
 ---
 
@@ -50,7 +50,7 @@ All contents of the correspondence, including email contents from You and My rep
 
 ## Contact
 
-If You have any questions regarding this Privacy Policy, feel free to [contact Me](https://www.scriptable-assets.page/terms-and-conditions/#contact).
+If You have any questions regarding this Privacy Policy, feel free to [contact Me](/contact/).
 
 ## History
 
