@@ -1,13 +1,13 @@
 ---
 permalink: /terms-and-conditions/
 title: 'Terms and Conditions'
-last_modified_at: 2022-05-05T01:30:00+09:00
+last_modified_at: 2023-05-10T04:30:00+09:00
 toc: true
 ---
 
 ## Thank you for taking interest in Scriptable Assets!
 
-The following Terms and Conditions ("Terms") govern Your access to and use of this Scriptable Assets website at [https://www.scriptable-assets.page/](https://www.scriptable-assets.page/) ("Website"). The scope of these Terms extend also to the apps, extensions, add-ons, and other types of solutions guided explicitly in this Website to which I, [Taro TSUKAGOSHI](https://github.com/ttsukagoshi), the sole administrator of this Website, have the right to distribute (collectively referred herein as "Service" or "[Services](#services)". Please read these Terms carefully. By accessing this Website or using any of the Services, You agree to be bound by these Terms. You also confirm You have read and agreed to My Privacy Policy at [https://www.scriptable-assets.page/privacy-policy/](https://www.scriptable-assets.page/privacy-policy/).
+The following Terms and Conditions ("Terms") govern Your access to and use of this Scriptable Assets website at [https://www.scriptable-assets.page/](https://www.scriptable-assets.page/) ("Website"). The scope of these Terms extend also to the apps, extensions, add-ons, and other types of solutions guided explicitly in this Website to which I, [Taro TSUKAGOSHI](https://github.com/ttsukagoshi), the sole administrator of this Website, have the right to distribute (collectively referred herein as "Service" or "[Services](#services)"). Please read these Terms carefully. By accessing this Website or using any of the Services, You agree to be bound by these Terms. You also confirm You have read and agreed to My Privacy Policy at [https://www.scriptable-assets.page/privacy-policy/](/privacy-policy/).
 
 "You", "Your", or "the user" in this page refers to the viewer of this Website or the user of the Services. These Terms herein constitutes a legal agreement between You and I ("both parties"). You must be of sufficient age, in Your timezone and local jurisdication, to legally bind Yourself to these Terms. If You are entering into these Terms on behalf of a company, You represent that You have the authority to bind that company to these Terms.
 {: .notice--info}
@@ -39,7 +39,7 @@ All the Services are open-sourced. License for each of the Service is provided i
 
 ## Right to Modify
 
-I reserve the right to update and change these Terms. You may terminate your use of the Services if the Terms are modified in a manner that substantially affects Your rights in connection with use of the Services. Your continued use of the Services after any such changes shall constitute your consent to such changes. You can review the most current version of the Terms at any time at [https://www.scriptable-assets.page/terms-and-conditions/](https://www.scriptable-assets.page/terms-and-conditions/).
+I reserve the right to update and change these Terms. You may terminate your use of the Services if the Terms are modified in a manner that substantially affects Your rights in connection with use of the Services. Your continued use of the Services after any such changes shall constitute your consent to such changes. You can review the most current version of the Terms at any time at [https://www.scriptable-assets.page/terms-and-conditions/](/terms-and-conditions/).
 
 I may also make changes to this Website and the Services from time to time. Any updates, upgrades, additions, or new features to the Services ("Updates") shall be subject to these Terms. You can receive push notifications of any such Updates via the GitHub repository of the respective Services.
 
@@ -47,7 +47,7 @@ I may also make changes to this Website and the Services from time to time. Any 
 
 Between You and I, You retain all right, title, and interest in any and all data, including, but not limited to files, attachments, text, images, personally identifiable information, and other content, that You process through the Services.
 
-Any data collected by this Website or its Services, should there be any, will be handled in compliance to the [Privacy Policy](https://www.scriptable-assets.page/privacy-policy/).
+Any data collected by this Website or its Services, should there be any, will be handled in compliance to the [Privacy Policy](/privacy-policy/).
 
 ## Warranty Disclaimer
 
@@ -69,7 +69,7 @@ These Terms, their interpretation, performance or any breach thereof, will be co
 
 ## Contact
 
-Should You have any questions regarding these Terms, You can [contact me via email](mailto:taro.tsukagoshi@gmail.com).
+Should You have any questions regarding these Terms, You can [contact me via the contact form](/contact/).
 
 ## History
 
