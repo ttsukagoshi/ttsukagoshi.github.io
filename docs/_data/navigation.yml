@@ -5,11 +5,13 @@ main:
   #   url: /categories/
   # - title: "Tags"
   #   url: /tags/
-  - title: "About"
+  - title: 'About'
     url: /about/
-  - title: "Google Workspace Add-ons"
+  - title: 'Google Workspace Add-ons'
     url: /add-ons/
-  - title: "Chrome Extensions"
-    url: /chrome-extensions/
-  - title: "Apps Script Solutions"
+  - title: 'axe-scan'
+    url: /axe-scan/
+  - title: 'Apps Script Solutions'
     url: /gas-solutions/
+  - title: 'Chrome Extensions'
+    url: /chrome-extensions/
