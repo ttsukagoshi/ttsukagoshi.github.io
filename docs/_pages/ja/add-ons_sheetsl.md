@@ -2,7 +2,7 @@
 permalink: /ja/add-ons/sheetsl/
 title: 'SheetsL: Google スプレッドシート&trade;のための DeepL 翻訳'
 excerpt: DeepL&trade; 翻訳を Google スプレッドシート&trade; で直接利用するためのアドオン。無料＆オープンソース。
-last_modified_at: 2023-03-28T08:00:00+09:00
+last_modified_at: 2023-05-12T02:00:00+09:00
 toc: true
 published: true
 ---
@@ -10,10 +10,8 @@ published: true
 [English]({{ site.url }}{{ site.baseurl }}/add-ons/sheetsl/)/日本語  
 {: .align-center}
 
-<!--
-[![Get this add-on from Google Workspace Marketplace](https://img.shields.io/badge/Google%20Workspace%20Add--on-Available-green?style=flat-square)](https://workspace.google.com/marketplace/app/group_merge_mail_merge_for_gmail/586770229603) [![clasp](https://img.shields.io/badge/built%20with-clasp-4285f4.svg?style=flat-square)](https://github.com/google/clasp) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-[![CodeQL](https://github.com/ttsukagoshi/mail-merge-for-gmail/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/ttsukagoshi/mail-merge-for-gmail/actions/workflows/codeql-analysis.yml) [![Deploy](https://github.com/ttsukagoshi/mail-merge-for-gmail/actions/workflows/deploy.yml/badge.svg)](https://github.com/ttsukagoshi/mail-merge-for-gmail/actions/workflows/deploy.yml) [![Labeler](https://github.com/ttsukagoshi/mail-merge-for-gmail/actions/workflows/label.yml/badge.svg)](https://github.com/ttsukagoshi/mail-merge-for-gmail/actions/workflows/label.yml) [![Lint Code Base](https://github.com/ttsukagoshi/mail-merge-for-gmail/actions/workflows/linter.yml/badge.svg)](https://github.com/ttsukagoshi/mail-merge-for-gmail/actions/workflows/linter.yml)
--->
+[![このアドオンをGoogle Workspace Marketplaceでインストールする](https://img.shields.io/badge/Google%20Workspace%20Add--on-Available-green?style=flat-square)](https://workspace.google.com/marketplace/app/sheetsl/1006481107276) [![claspのGitHubレポジトリへのリンク](https://img.shields.io/badge/built%20with-clasp-4285f4.svg?style=flat-square)](https://github.com/google/clasp) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+[![CodeQL](https://github.com/ttsukagoshi/sheetsL/actions/workflows/codeql.yml/badge.svg)](https://github.com/ttsukagoshi/sheetsL/actions/workflows/codeql.yml) [![Lint Code Base](https://github.com/ttsukagoshi/sheetsL/actions/workflows/linter.yml/badge.svg)](https://github.com/ttsukagoshi/sheetsL/actions/workflows/linter.yml) [![Publish Release](https://github.com/ttsukagoshi/sheetsL/actions/workflows/deploy.yml/badge.svg)](https://github.com/ttsukagoshi/sheetsL/actions/workflows/deploy.yml)
 
 DeepL&trade; 翻訳を Google スプレッドシート&trade; で直接利用するための、オープンソースのアドオンです。選択したセル範囲の内容を DeepL API で翻訳して、その結果を、選択したセル範囲の右隣に表示します。DeepL API Free または Pro アカウントが必要です。
 
@@ -35,10 +33,7 @@ DeepL&trade; 翻訳を Google スプレッドシート&trade; で直接利用す
 
 ### 1. アドオンをインストールする
 
-このアドオンは現在、Google により審査中です。Google Workspace Marketplace で利用できるようになるまでお待ちください。
-{: .notice--warning}
-
-[Google Workspace Marketplace]() からこのアドオンをインストールします。アップデートは自動的に配信されます。
+[Google Workspace Marketplace](https://workspace.google.com/marketplace/app/sheetsl/1006481107276) からこのアドオンをインストールします。アップデートは自動的に配信されます。
 
 ### 2. DeepL API の認証キーを設定する
 
