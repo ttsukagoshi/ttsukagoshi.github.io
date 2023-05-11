@@ -10,7 +10,7 @@ header:
   #   - label: "<i class='fas fa-download'></i> Install now"
   #     url: "/docs/quick-start-guide/"
 excerpt: Coding Kaizen into Our Workspace
-feature_row1:
+feature_row:
   - image_path: /assets/images/group-merge/group-merge-application-banner_1280.png
     alt: 'Group Merge Application Banner'
     title: 'Group Merge'
@@ -18,26 +18,24 @@ feature_row1:
     url: '/add-ons/group-merge/'
     btn_class: 'btn--primary'
     btn_label: 'Learn more'
-  - image_path: /assets/images/ImgSrc-er/screenshot_ImgSrc-er.jpg
-    alt: 'Image Sourcer icon'
-    title: 'ImgSrc-er'
-    excerpt: 'Convert selected image link URL into an HTML `<img>` tag with `src` attribute on the clipboard.'
-    url: '/chrome-extensions/imgsrc-er/'
+  - image_path: '/assets/images/sheetsl/SheetsL_Application_Card_Banner_220.png'
+    alt: 'SheetsL icon'
+    title: 'SheetsL'
+    excerpt: 'Use DeepL&trade; Translation without leaving Google Sheets&trade;.'
+    url: '/add-ons/sheetsl/'
     btn_class: 'btn--primary'
     btn_label: 'Learn more'
-  - image_path: /assets/images/openBD-checker/screenshot_openBD_2.jpg
-    alt: 'openBD Checker icon'
-    title: 'openBD Checker'
-    excerpt: 'Check reference book data registered on [openBD](https://openbd.jp/) by right-clicking on an ISBN.'
-    url: '/chrome-extensions/openbd-checker/'
+  - image_path: '/assets/images/axe-scan/screenshot.png'
+    alt: 'axe-scan banner'
+    title: 'axe-scan'
+    excerpt: 'A CLI tool to test web accessibility on multiple web pages based on a list of URLs in a text file. Run on Node.js and uses axe-core and Puppeteer as its testing and browsing engines.'
+    url: '/axe-scan/'
     btn_class: 'btn--primary'
     btn_label: 'Learn more'
-last_modified_at: 2023-05-10T04:30:00+09:00
+last_modified_at: 2023-05-12T03:00:00+09:00
 ---
 
-A hub for open-source solutions to make you and everyone around you happy and productive.
-
-{% include feature_row id="feature_row1"%}
+{% include feature_row id="feature_row"%}
 
 ## Feel free to use and share the contents!
 
