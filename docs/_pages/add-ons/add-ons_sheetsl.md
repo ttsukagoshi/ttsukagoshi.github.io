@@ -1,8 +1,8 @@
 ---
 permalink: /add-ons/sheetsl/
 title: 'SheetsL: DeepL&trade; Translation for Google Sheets&trade;'
-excerpt: Use DeepL™ Translation without leaving Google Sheets™. The add-on that's open-sourced and FREE!
-last_modified_at: 2023-03-25T02:00:00+09:00
+excerpt: Use DeepL&trade; Translation without leaving Google Sheets&trade;. The add-on that's open-sourced and FREE!
+last_modified_at: 2023-05-12T02:00:00+09:00
 toc: true
 published: true
 ---
@@ -10,10 +10,8 @@ published: true
 English/[日本語]({{ site.url }}{{ site.baseurl }}/ja/add-ons/sheetsl/)  
 {: .align-center}
 
-<!--
-[![Get this add-on from Google Workspace Marketplace](https://img.shields.io/badge/Google%20Workspace%20Add--on-Available-green?style=flat-square)](https://workspace.google.com/marketplace/app/group_merge_mail_merge_for_gmail/586770229603) [![clasp](https://img.shields.io/badge/built%20with-clasp-4285f4.svg?style=flat-square)](https://github.com/google/clasp) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-[![CodeQL](https://github.com/ttsukagoshi/mail-merge-for-gmail/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/ttsukagoshi/mail-merge-for-gmail/actions/workflows/codeql-analysis.yml) [![Deploy](https://github.com/ttsukagoshi/mail-merge-for-gmail/actions/workflows/deploy.yml/badge.svg)](https://github.com/ttsukagoshi/mail-merge-for-gmail/actions/workflows/deploy.yml) [![Labeler](https://github.com/ttsukagoshi/mail-merge-for-gmail/actions/workflows/label.yml/badge.svg)](https://github.com/ttsukagoshi/mail-merge-for-gmail/actions/workflows/label.yml) [![Lint Code Base](https://github.com/ttsukagoshi/mail-merge-for-gmail/actions/workflows/linter.yml/badge.svg)](https://github.com/ttsukagoshi/mail-merge-for-gmail/actions/workflows/linter.yml)
--->
+[![Get this add-on from Google Workspace Marketplace](https://img.shields.io/badge/Google%20Workspace%20Add--on-Available-green?style=flat-square)](https://workspace.google.com/marketplace/app/sheetsl/1006481107276) [![clasp](https://img.shields.io/badge/built%20with-clasp-4285f4.svg?style=flat-square)](https://github.com/google/clasp) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+[![CodeQL](https://github.com/ttsukagoshi/sheetsL/actions/workflows/codeql.yml/badge.svg)](https://github.com/ttsukagoshi/sheetsL/actions/workflows/codeql.yml) [![Lint Code Base](https://github.com/ttsukagoshi/sheetsL/actions/workflows/linter.yml/badge.svg)](https://github.com/ttsukagoshi/sheetsL/actions/workflows/linter.yml) [![Publish Release](https://github.com/ttsukagoshi/sheetsL/actions/workflows/deploy.yml/badge.svg)](https://github.com/ttsukagoshi/sheetsL/actions/workflows/deploy.yml)
 
 Open-sourced Google Sheets&trade; add-on to use DeepL translation without leaving Google Sheets&trade;. Translate the contents of the selected range and paste them in the range of cells adjacent to the original range. You need to have your own DeepL API Free or Pro account.
 
@@ -35,10 +33,7 @@ See the following official documentations of DeepL for more details:
 
 ### 1. Install the Add-on
 
-This add-on is currenly going through Google's verification process. Please wait until it is available in the Google Workspace Marketplace.
-{: .notice--warning}
-
-Install this add-on from [the Google Workspace Marketplace](). You have only to do this once per user; updates to the add-on will be automatically distributed via the Marketplace.
+Install this add-on from [the Google Workspace Marketplace](https://workspace.google.com/marketplace/app/sheetsl/1006481107276). You have only to do this once per user; updates to the add-on will be automatically distributed via the Marketplace.
 
 ### 2. Set your DeepL API authentication key
 
@@ -88,8 +83,10 @@ This section constitutes an addition to the [Terms and Conditions]({{ site.url }
 
 Separate from these policies, Google provides protection for the add-on users' privacy by limiting the _scope_ of authorized information that an add-on can have access to, called the [Google OAuth Scopes](https://developers.google.com/identity/protocols/oauth2/scopes). The list of OAuth Scopes that this Add-on requests from the user is as follows. As you may notice, Google does not define an authorization scope that is completely fit to the purpose and required functions of this Add-on in their [Google Sheets](https://developers.google.com/sheets/api/guides/authorizing#OAuth2Authorizing) authorization scopes, so some of the scopes may seem broader than necessary. As a supplement to the Terms and Conditions, this is a legally binding statement that this Add-on will not process any authorized data in the manner not described in the below table:
 
+<!--
 **Under Review** The scope(s) below are currently under review by the Google team to be updated on the Google Workspace Marketplace.
 {: .notice--warning}
+-->
 
 The prefix `...` for the scopes in the table stands for `https://www.googleapis.com/auth`
 {: .notice--info}
