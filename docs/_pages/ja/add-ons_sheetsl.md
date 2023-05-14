@@ -15,7 +15,7 @@ published: true
 
 DeepL&trade; 翻訳を Google スプレッドシート&trade; で直接利用するための、オープンソースのアドオンです。選択したセル範囲の内容を DeepL API で翻訳して、その結果を、選択したセル範囲の右隣に表示します。DeepL API Free または Pro アカウントが必要です。
 
-![SheetsL icon]({{ site.url }}{{ site.baseurl }}/assets/images/sheetsl/SheetsL_Application Card Banner_220.png)
+![SheetsL icon](/assets/images/sheetsl/SheetsL_Application_Card_Banner_220.png)
 
 ## 前提条件：DeepL API アカウントを持っていること
 
