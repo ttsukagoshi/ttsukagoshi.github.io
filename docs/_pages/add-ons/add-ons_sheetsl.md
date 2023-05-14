@@ -15,7 +15,7 @@ English/[日本語]({{ site.url }}{{ site.baseurl }}/ja/add-ons/sheetsl/)
 
 Open-sourced Google Sheets&trade; add-on to use DeepL translation without leaving Google Sheets&trade;. Translate the contents of the selected range and paste them in the range of cells adjacent to the original range. You need to have your own DeepL API Free or Pro account.
 
-![SheetsL icon]({{ site.url }}{{ site.baseurl }}/assets/images/sheetsl/SheetsL_Application Card Banner_220.png)
+![SheetsL icon](/assets/images/sheetsl/SheetsL_Application_Card_Banner_220.png)
 
 ## Prerequisite: Sign up for the DeepL API
 
