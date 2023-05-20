@@ -2,7 +2,7 @@
 permalink: /add-ons/sheetsl/
 title: 'SheetsL: DeepL&trade; Translation for Google Sheets&trade;'
 excerpt: Use DeepL&trade; Translation without leaving Google Sheets&trade;. The add-on that's open-sourced and FREE!
-last_modified_at: 2023-05-12T02:00:00+09:00
+last_modified_at: 2023-05-21T03:00:00+09:00
 toc: true
 published: true
 ---
@@ -35,16 +35,22 @@ See the following official documentations of DeepL for more details:
 
 Install this add-on from [the Google Workspace Marketplace](https://workspace.google.com/marketplace/app/sheetsl/1006481107276). You have only to do this once per user; updates to the add-on will be automatically distributed via the Marketplace.
 
-### 2. Set your DeepL API authentication key
+### 2. Set your DeepL API Authentication Key
 
 From the Google Sheets menu, go to Extensions > SheetsL > Settings > Set Auth Key. Enter the authentication key of your DeepL API account, which can be found in the [DeepL account page](https://www.deepl.com/account/summary).
 
 ![Screenshot of the menu in SheetsL to set the DeepL API authentication key]({{ site.url }}{{ site.baseurl }}/assets/images/sheetsl/set-auth-key.png)
 
+Note that there are two types of accounts in the DeepL service: the **DeepL account** and the **DeepL API account**. Both provide Free and Pro plans, but if you cannot find your authentication key in your account page, you are likely to be logged into the former. You will need to logout of this account and login (or sign-up) for the DeepL API account. Once you have finished setting your DeepL API authentication key to SheetsL, you can re-login to your original DeepL account.
+{: .notice--warning}
+
 See [How are my DeepL API authentication key saved in SheetsL?](#how-are-my-deepl-api-authentication-key-saved-in-sheetsl) if you are wondering how the authentication is securely saved.
 {: .notice--info}
 
 ### 3. Set your target language
+
+There are reports of SheetsL returning an error at this point when the add-on was executed for the first time on a Google Sheets file that was already open at the time of installation. If you encounter such error, **re-open the file using your browser's reload button**.
+{: .notice--warning}
 
 From the Google Sheets menu, go to Extensions > SheetsL > Settings > Set Language. You will be asked to enter the language code of your source and target languages, respectively. Choose one of the languages available in DeepL, listed in the prompt message.
 
