@@ -2,7 +2,7 @@
 permalink: /ja/add-ons/sheetsl/
 title: 'SheetsL: Google スプレッドシート&trade;のための DeepL 翻訳'
 excerpt: DeepL&trade; 翻訳を Google スプレッドシート&trade; で直接利用するためのアドオン。無料＆オープンソース。
-last_modified_at: 2023-05-12T02:00:00+09:00
+last_modified_at: 2023-05-21T03:00:00+09:00
 toc: true
 published: true
 ---
@@ -37,16 +37,22 @@ DeepL&trade; 翻訳を Google スプレッドシート&trade; で直接利用す
 
 ### 2. DeepL API の認証キーを設定する
 
-Google Sheets のメニューから、「拡張機能」→「SheetsL」→「Settings」→「Set Auth Key」と進みます。[DeepL のアカウント情報ページ](https://www.deepl.com/ja/account/summary)で確認できる、DeepL API アカウントの認証キーを入力します。
+Google スプレッドシートのメニューから、「拡張機能」→「SheetsL」→「Settings」→「Set Auth Key」と進みます。[DeepL のアカウント情報ページ](https://www.deepl.com/ja/account/summary)で確認できる、DeepL API アカウントの認証キーを入力します。
 
 ![SheetsLでDeepL API認証キーを設定するメニューのスクリーンショット]({{ site.url }}{{ site.baseurl }}/assets/images/sheetsl/set-auth-key.png)
+
+DeepL には通常の**DeepL アカウント**と、**DeepL API アカウント**の 2 種類があることにご注意ください。いずれも無料/有料プランのあるアカウントですが、もしアカウント情報ページで認証キーについて見つけられない場合は、前者にすでにログインされている可能性が高いです。いったんログアウトいただき、改めて DeepL API アカウントとしてログイン（または新規登録）する必要があります。一度、認証キーの登録が完了すれば再度元のアカウントにログインいただいて大丈夫です。
+{: .notice--warning}
 
 DeepL API の認証キーが、SheetsL 内でどのように安全に保存されるのかが気になる方は、「[SheetsL で DeepL API 認証キーはどのように保存される？](#deepl-api-認証キーはどのように保存される)」をご覧ください。
 {: .notice--info}
 
 ### 3. 翻訳先の言語を設定する
 
-Google Sheets のメニューから、「拡張機能」→「SheetsL」→「Settings」→「Set Language」と進みます。ソース言語（原文の言語）とターゲット言語（翻訳後の言語）の言語コードをそれぞれ入力するよう求められます。メッセージに記載されている、DeepL で利用可能な言語のいずれかを選択して入力してください。
+Google スプレッドシートのファイルを開いた状態で SheetsL をインストールした場合、最初の実行時にこのステップでエラーが出ることが報告されています。その場合は、**ブラウザの「更新」ボタンを通じて Google スプレッドシートを読み込み直し**てみてください。
+{: .notice--warning}
+
+Google スプレッドシートのメニューから、「拡張機能」→「SheetsL」→「Settings」→「Set Language」と進みます。ソース言語（原文の言語）とターゲット言語（翻訳後の言語）の言語コードをそれぞれ入力するよう求められます。メッセージに記載されている、DeepL で利用可能な言語のいずれかを選択して入力してください。
 
 ターゲット言語（翻訳後の言語）の指定は必須ですが、ソース言語（原文の言語）は空白にしておくことができます。その場合は、DeepL の自動言語検出により原文の言語が判定されます。
 {: .notice--info}
@@ -64,7 +70,7 @@ DeepL で翻訳するセル範囲を選択した後、「拡張機能」→「Sh
 
 ### DeepL API 認証キーはどのように保存される？
 
-[DeepL API の認証キーを設定する](#2-deepl-api-の認証キーを設定する)で入力した DeepL API 認証キーは、アドオンの[ユーザプロパティ](https://developers.google.com/apps-script/guides/properties?hl=ja)に保存されます。ユーザプロパティは、そのユーザのみがアクセス権を持つもので、アドオンの開発者や、他のアドオン・アプリ、Google Sheets ファイルを共有している他のユーザなど、他の誰とも共有されません。
+[DeepL API の認証キーを設定する](#2-deepl-api-の認証キーを設定する)で入力した DeepL API 認証キーは、アドオンの[ユーザプロパティ](https://developers.google.com/apps-script/guides/properties?hl=ja)に保存されます。ユーザプロパティは、そのユーザのみがアクセス権を持つもので、アドオンの開発者や、他のアドオン・アプリ、Google スプレッドシート ファイルを共有している他のユーザなど、他の誰とも共有されません。
 
 ## 利用規約
 
