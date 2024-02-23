@@ -1,6 +1,6 @@
 ---
 permalink: /add-ons/group-merge/
-title: 'Group Merge: Mail Merge for Gmail'
+title: "Group Merge: Mail Merge for Gmail"
 excerpt: Open-sourced Google Workspace add-on to send personalized emails based on Gmail template to multiple recipients. The unique Group Merge feature allows sender to group multiple contents for the same recipient in a single email.
 last_modified_at: 2022-05-08T01:00:00+09:00
 toc: true
@@ -244,6 +244,9 @@ Separate from these policies, Google provides protection for the add-on users' p
 
 The prefix `...` for the scopes in the table stands for `https://www.googleapis.com/auth`
 {: .notice--info}
+
+Scopes `.../gmail.compose` and `.../gmail.modify` below are likely to be replaced by `.../gmail.send`, `.../gmail.labels`, and `.../gmail.readonly` to reflect the latest Gmail API scopes. The changes to the scopes and this webpage will be made in line with Google's API OAuth Scopes re-verification process.
+{: .notice--warning}
 
 | Scope                       | Meaning                                                            | How this Add-on uses this Scope                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | --------------------------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
